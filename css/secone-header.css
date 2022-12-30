@@ -100,4 +100,8 @@
   .second-header .sec-cover .sec-content .sec-line {
     padding: 0px 30px;
   }
+
+  .second-header .sec-cover .sec-content .sec-line {
+    padding: 0px 25px;
+  }
 }

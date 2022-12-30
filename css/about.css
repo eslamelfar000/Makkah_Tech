@@ -353,6 +353,7 @@ body {
   .company-details .row .detail-ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 0px;
   }
 
   .company-details .row .detail-col-info .detail-content .detail-info h3 {
@@ -377,9 +378,22 @@ body {
 }
 
 @media (max-width: 400px) {
-  .company-details .row .detail-ul {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+  .company-details .row .detail-ul li img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .company-details .row .detail-ul li:nth-child(1) img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .company-details .row .detail-ul li span {
+    font-size: 25px;
+  }
+
+  .company-details .row .detail-ul li h4 {
+    font-size: 16px;
   }
 }
 
