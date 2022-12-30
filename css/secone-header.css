@@ -1,0 +1,103 @@
+:root {
+  --one-color: rgb(0, 110, 255);
+  --two-color: orange;
+  --three-color: rgb(218, 233, 255);
+  --four-color: rgb(255, 242, 219);
+  --five-color: #fbe6e6;
+  --six-color: #e95557;
+}
+
+.second-header {
+  background: url(../pics/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  direction: rtl !important;
+  width: 100%;
+  overflow: hidden;
+}
+
+.second-header .sec-cover {
+  background: rgba(0, 0, 0, 0.628);
+  padding: 200px 0px 130px 0px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.second-header .sec-cover::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../pics/Layer.svg);
+  background-position: 0 123%;
+  background-repeat: no-repeat;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.second-header .sec-cover .sec-content .sec-title {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.second-header .sec-cover .sec-content .sec-title span {
+  background: var(--two-color);
+  color: white;
+  padding: 4px 30px;
+  border-radius: 5px;
+}
+
+.second-header .sec-cover .sec-content .sec-line {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  color: white;
+}
+
+.second-header .sec-cover .sec-content .sec-line a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+.second-header .sec-cover .sec-content .sec-line label {
+  margin: 0px 10px;
+  opacity: 0.7;
+}
+
+.second-header .sec-cover .sec-content .sec-line i {
+  font-size: 14px;
+  opacity: 0.6;
+  margin: 0px 15px;
+}
+
+.second-header .sec-cover .sec-content .sec-line span {
+  font-size: 18px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--two-color);
+}
+
+@media (max-width: 767px) {
+  .second-header .sec-cover {
+    padding: 160px 0px 100px 0px;
+  }
+  .second-header .sec-cover .sec-content .sec-line {
+    display: block;
+    line-height: 0.8cm;
+    padding: 0px 35px;
+  }
+
+  .second-header .sec-cover::after {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .second-header .sec-cover .sec-content .sec-line {
+    padding: 0px 30px;
+  }
+}

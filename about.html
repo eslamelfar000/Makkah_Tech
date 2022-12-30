@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./liberaries/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./liberaries/fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/cursor.css">
+    <link rel="stylesheet" href="./css/secone-header.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="icon" href="./pics/ava.png">
+    <title> عن الشركة | مكه_تك - لخدمات تصميم وبرمجة المواقع وتطبيقات الهاتف</title>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <div class="nav-bar" id="nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="right-side">
+                    <div class="logo-img">
+                        <a href="home.html" class="logo-link">
+                            <!-- <img src="./pics/" class="logo" alt=""> -->
+                            مكه_تك
+                        </a>
+                    </div>
+
+                    <div class="page-links">
+                        <ul>
+                            <li class="li-link">
+                                <a href="about.html" class="link">عن الشركة</a>
+                            </li>
+                            <li class="li-link">
+                                <a href="#" class="link">الخدمات <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="down-list">
+                                    <img src="./pics/arrow.png" alt="">
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">تصميم المواقع الالكترونية</a>
+                                    </li>
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">أرشفة المواقع الالكترونية</a>
+                                    </li>
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">تصميم وبرمجة تطبيقات الجوال</a>
+                                    </li>
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">تصميم المتاجر الالتكرونية</a>
+                                    </li>
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">استضافة المواقع وتطبيقات الجوال</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li-link">
+                                <a href="#" class="link">اعمالنا</a>
+                            </li>
+                            <li class="li-link">
+                                <a href="#" class="link">المدونة</a>
+                            </li>
+                            <li class="li-link">
+                                <a href="#" class="link">تواصل معنا</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="left-side">
+                    <div class="nav-contact">
+                        <ul>
+                            <li>
+                                <a href="#" class="contact-link">our@makkahtech.com
+                                    <i class="fa-regular fa-envelope"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="contact-link">+09785458446453
+                                    <i class="fa-brands fa-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="side-icon">
+                        <div class="box" id="side-box" onclick="openSide()">
+                            <div class="all first-row">
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                            </div>
+                            <div class="all sec-row">
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                            </div>
+                            <div class="all last-row">
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="overlay" id="overlay">
+            <div class="side-nav" id="side">
+                <div class="side-content">
+                    <div class="close-btn">
+                        <img src="./pics/close.png" onclick="closeSide()" alt="" />
+                    </div>
+
+                    <div class="logo-img">
+                        <a href="home.html" class="logo-link">
+                            <!-- <img src="./pics/" class="logo" alt=""> -->
+                            مكه_تك
+                        </a>
+                    </div>
+
+                    <div class="side-social">
+                        <ul>
+                            <li>
+                                <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="side-nav-links">
+                        <ul>
+                            <li class="side-li">
+                                <a href="#" class="side-link">عن الشركة</a>
+                            </li>
+                            <li class="side-li">
+                                <div class="down-btn">
+                                    <!-- <a href="#" class="side-link">الخدمات</a> -->
+                                    <button id="btn-click" onclick="openSlide()"><span>الخدمات</span> <i
+                                            class="fa-solid fa-angle-down"></i></button>
+
+                                    <div class="slide-body" id="slide-body">
+                                        <div class="slide-body-info">
+                                            <ul class="down-list">
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">تصميم المواقع الالكترونية</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">أرشفة المواقع الالكترونية</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">تصميم وبرمجة تطبيقات الجوال</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">تصميم المتاجر الالتكرونية</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">استضافة المواقع وتطبيقات الجوال</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">رؤية جميع الخدمات</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="side-li">
+                                <a href="#" class="side-link">اعمالنا</a>
+                            </li>
+                            <li class="side-li">
+                                <a href="#" class="side-link">المدونة</a>
+                            </li>
+                            <li class="side-li">
+                                <a href="#" class="side-link">تواصل معنا</a>
+                            </li>
+                            <div class="contact-li">
+                                <li>
+                                    <a href="#" class="whatsapp btn"><i class="fa-brands fa-whatsapp"></i> تواصل معنا
+                                        عبر
+                                        الواتساب</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="whatsapp btn"><i class="fa-regular fa-envelope"></i> تواصل مباشر
+                                        عبر
+                                        الايميل</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar end -->
+
+
+    <section class="second-header">
+        <div class="sec-cover">
+            <div class="container">
+                <div class="sec-content">
+                    <div class="sec-title">
+                        <span>عن الشركة</span>
+                    </div>
+
+                    <div class="sec-line">
+                        <a href="./home.html">الصفحة الرئيسية <label>|</label> مكه_تك لتصميم وبرمجة المواقع وتطبيقات
+                            الجوال</a>
+                        <i class="fa-solid fa-angle-left"></i>
+                        <span>عن الشركة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- about section start -->
+
+    <section class="about-us">
+        <div class="container">
+
+            <div class="float-box">
+                <div class="icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+
+                <div class="call">
+                    <a href="#">
+                        <h4>هل لديك استفسار ؟</h4>
+                        <p>201035779954+</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="colom col-12 col-lg-6">
+                    <div class="about-col-info">
+                        <div class="about-head">
+                            <div class="head-title">
+                                <span>
+                                    <img src="./pics/client.png" />
+                                    من نحن
+                                </span>
+
+                            </div>
+
+                            <div class="head-line">
+                                <h2>تعرف علي شركة مكه_تك</h2>
+                            </div>
+                        </div>
+
+
+                        <div class="about-body">
+                            <p>هل تبحث عن شركة إبداعية مكرسة لنجاحك ونجاح موقع الويب الخاص بك؟ لذلك لا تقلق ، نحن هنا
+                                لخدمتك ، أصول تك شريك إلكتروني رائع للوصول إلى النجاح الذي تسعى إليه ، من خلال خبرتنا
+                                الطويلة في مجال التسويق الإلكتروني والحلول الرائدة والرقمية ، نضمن لك العمل مع فريق من
+                                المحترفين في عالم الإنترنت تعتبر شركتنا من أفضل الشركات الرائدة في مجال تطوير وتصميم
+                                المواقع الإلكترونية في مصر والوطن العربي. لدينا خبرات طويلة في مجال التسويق الإلكتروني
+                                واستضافة المواقع وبرمجة التطبيقات لأجهزة Android و iPhone </p>
+
+                            <ul class="about-ul">
+                                <li>
+                                    <h5>أفكار متجددة</h5>
+                                    <span>تميزك دائما عن الاخرين</span>
+                                </li>
+                                <li>
+                                    <h5>فريق عمل</h5>
+                                    <span>يتطور من اجلك</span>
+                                </li>
+                                <li>
+                                    <h5>في الموعد</h5>
+                                    <span>نقدر قيمة وقتك</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="colom col-12 col-lg-6">
+                    <div class="about-col-img">
+                        <img src="./pics/about.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section end -->
+
+
+    <!-- company details start -->
+
+    <section class="company-details">
+        <div class="section-cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-11 col-sm-12 col-lg-10 col-xl-9 col-xxl-7">
+                        <div class="detail-col-info">
+                            <div class="detail-content">
+                                <div class="num">
+                                    <h4>01</h4>
+                                </div>
+
+                                <div class="detail-info">
+                                    <h3>ماذا نقدم ؟</h3>
+                                    <p>تقدم مكه تك مجموعة واسعة من خدمات برمجة و تصميم مواقع الانترنت التي ستساعدك على
+                                        وضع
+                                        عملك على الخريطة والبدء في جني الأرباح. يتألف فريق العمل لدينا من متخصصين ذوي
+                                        خبرة
+                                        في مجال تصميم المواقع و برمجة تطبيقات الجوال ، والترويج للاعمال على شبكة
+                                        الانترنت ،
+                                        وتصميم المتاجر ، موقع الويب الخاص بك هو بطاقة عملك على الإنترنت. طور علامتك
+                                        التجارية
+                                        مع اصول تك للبقاء في صدارة المنافسة</p>
+                                </div>
+                            </div>
+                            <div class="detail-content">
+                                <div class="num">
+                                    <h4>02</h4>
+                                </div>
+
+                                <div class="detail-info">
+                                    <h3>خدماتنا</h3>
+                                    <p>خدماتنا متكاملة في مجال البرمجيات والأنظمة الإلكترونية وتصميم المواقع الإلكترونية
+                                        و
+                                        تطبيقات الهاتف الذكية وتطبيقات الويب للأفراد والشركات والمؤسسات داخل وخارج مصر
+                                        على
+                                        حد سواء. </p>
+                                </div>
+                            </div>
+                            <div class="detail-content">
+                                <div class="num">
+                                    <h4>03</h4>
+                                </div>
+
+                                <div class="detail-info">
+                                    <h3>فريق العمل</h3>
+                                    <p> فريق العمل لدينا يتميز بالخبرة والموهبة في كل ما يتعلق بالصناعة الرقمية. نقدم
+                                        نطاق
+                                        واسع من الخدمات تبدأ من تصميم المواقع الإلكترونية وتطبيقات الموبايل وتطويرها الى
+                                        استضافة موارد المؤسسات واعدادات السيرفرات بالإضافة الى خدمات الأمن والحماية
+                                        والنسخ
+                                        الاحتياطي السحابي. </p>
+                                </div>
+                            </div>
+                            <div class="detail-content">
+                                <div class="num">
+                                    <h4>04</h4>
+                                </div>
+
+                                <div class="detail-info">
+                                    <h3>ما حققته الشركة</h3>
+                                    <p>حققت الشركة نجاح في عديد من التطبيقات والمواقع الالكترونية وابرزهم تطبيق وموقع
+                                        منصة اعلاف بالمملكة السعودية , وتطبيق مراد لتوصيل الطلبات اعلاف بالمملكة
+                                        السعودية , وتطبيق مراد لتوصيل الطلبات
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="detail-ul">
+                            <li>
+                                <img src="./pics/star-2.png" alt="">
+
+                                <div class="li-info">
+                                    <span id="num">5</span>
+                                    <h4>أعوام من الخبرة</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./pics/rocket.png" alt="">
+
+                                <div class="li-info">
+                                    <span id="num">70</span>
+                                    <h4>الاعمال</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./pics/heart.png" alt="">
+
+                                <div class="li-info">
+                                    <span id="num">1476</span>
+                                    <h4>عميل</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./pics/location.png" alt="">
+
+                                <div class="li-info">
+                                    <span id="num">1</span>
+                                    <h4>فروع</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- company details end -->
+
+
+    <section class="our-message">
+        <div class="container">
+            <div class="message-head">
+                <div class="head-title">
+                    <span>
+                        <img src="./pics/development.png" />
+                        طموح
+                    </span>
+
+                </div>
+
+                <div class="head-line">
+                    <h2>شركة ناشئة تُريد الأفضل دائما</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="colom col-11 col-md-6 col-lg-4">
+                    <div class="message-info">
+                        <div class="message-img">
+                            <img src="./pics/message.png" alt="">
+                        </div>
+
+                        <div class="message-detail">
+                            <h3>رسالتنا</h3>
+                            <p>تلبية احتياجات العملاء من خلال تقديم خدمات متميزة و منتجات ذات جودة عالية تحمل القيم التي
+                                تؤثر إيجابياً في المجتمع.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="colom col-11 col-md-6 col-lg-4">
+                    <div class="message-info">
+                        <div class="message-img">
+                            <img src="./pics/hope.png" alt="">
+                        </div>
+
+                        <div class="message-detail">
+                            <h3>أهدافنا</h3>
+                            <p>ما نحاول القيام به في حلول التقنية هو في غرس مفهوم التحول الرقمي و الحلول الذكية لكافة
+                                الأفراد و المؤسسات والشركات في مختلف قطاعات العمل.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="colom col-11 col-md-12 col-lg-4">
+                    <div class="message-info">
+                        <div class="message-img">
+                            <img src="./pics/vision.png" alt="">
+                        </div>
+
+                        <div class="message-detail">
+                            <h3>رؤيتنا</h3>
+                            <p>مفهوم التحول الإلكتروني و الحلول الذكية لكافة الأفراد و المؤسسات والشركات في مختلف قطاعات
+                                العمل اصبح هدف لا غني عنه لأي كيان ناجح.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- footer start -->
+    <footer class="my-footer">
+        <div class="footer-cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="footer-content">
+                            <h1>نحن نحب أن نسمع منك <img src="./pics/happiness.png" alt=""></h1>
+
+                            <div class="sec-row row">
+                                <div class="f-col col-12 col-sm-6">
+                                    <div class="right-col">
+                                        <h3>نتشرف بزيارتكم</h3>
+                                        <a href="#">السويدي الغربي، الرياض- الدور الأول - مكتب 2 - عمارة صيدلية
+                                            الدواء</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="left-col">
+                                        <h3>تواصل معنا</h3>
+                                        <ul class="footer-contact-ul">
+                                            <li>
+                                                <a href="#" class="footer-ul-link"><i class="fa-brands fa-whatsapp"></i>
+                                                    78668349833423+</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="footer-ul-link"><i class="fa-brands fa-whatsapp"></i>
+                                                    201085445875+</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="footer-ul-link"><i
+                                                        class="fa-brands fa-instagram"></i>
+                                                    our@makkahtec.com</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="footer-content-2">
+                            <h3 class="head-1">روابط سريعة</h3>
+
+                            <ul class="speed-ul">
+                                <li>
+                                    <a href="#">تصميم المواقع الالكترونية</a>
+                                </li>
+                                <li>
+                                    <a href="#">تصميم وبرمجة تطبيقات الجوال</a>
+                                </li>
+                                <li>
+                                    <a href="#">تصميم المتاجر الالكترونية</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="footer-content-2">
+                            <h3 class="head-2">تابعنا علي شبكات التواصل</h3>
+                            <ul class="social-ul">
+                                <li>
+                                    <a href="#"><img src="./pics/instagram.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./pics/twitter.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./pics/facebook.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="bottom-sec">
+        <div class="container">
+            <div class="low">
+                <button onclick="scrollUp()"><i class="fa-solid fa-arrow-up"></i></button>
+                <p>©2022, مكه تك لتصميم وبرمجة المواقع وتطبيقات الجوال جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </section>
+    <!-- footer end -->
+
+
+    <!-- custom cursor -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/cursor.js"></script>
+    <script src="./js/scrollToUp.js"></script>
+</body>
+
+</html>

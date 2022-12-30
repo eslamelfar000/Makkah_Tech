@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./liberaries/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./liberaries/fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/cursor.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="icon" href="./pics/ava.png">
+    <title> الصفحة الرئيسية | مكه_تك - لخدمات تصميم وبرمجة المواقع وتطبيقات الهاتف</title>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <div class="nav-bar" id="nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="right-side">
+                    <div class="logo-img">
+                        <a href="home.html" class="logo-link">
+                            <!-- <img src="./pics/" class="logo" alt=""> -->
+                            مكه_تك
+                        </a>
+                    </div>
+
+                    <div class="page-links">
+                        <ul>
+                            <li class="li-link">
+                                <a href="about.html" class="link">عن الشركة</a>
+                            </li>
+                            <li class="li-link">
+                                <a href="#" class="link">الخدمات <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="down-list">
+                                    <img src="./pics/arrow.png" alt="">
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">تصميم المواقع الالكترونية</a>
+                                    </li>
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">أرشفة المواقع الالكترونية</a>
+                                    </li>
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">تصميم وبرمجة تطبيقات الجوال</a>
+                                    </li>
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">تصميم المتاجر الالتكرونية</a>
+                                    </li>
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">استضافة المواقع وتطبيقات الجوال</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li-link">
+                                <a href="#" class="link">اعمالنا</a>
+                            </li>
+                            <li class="li-link">
+                                <a href="#" class="link">المدونة</a>
+                            </li>
+                            <li class="li-link">
+                                <a href="#" class="link">تواصل معنا</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="left-side">
+                    <div class="nav-contact">
+                        <ul>
+                            <li>
+                                <a href="#" class="contact-link">our@makkahtech.com
+                                    <i class="fa-regular fa-envelope"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="contact-link">+09785458446453
+                                    <i class="fa-brands fa-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="side-icon">
+                        <div class="box" id="side-box" onclick="openSide()">
+                            <div class="all first-row">
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                            </div>
+                            <div class="all sec-row">
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                            </div>
+                            <div class="all last-row">
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="overlay" id="overlay">
+            <div class="side-nav" id="side">
+                <div class="side-content">
+                    <div class="close-btn">
+                        <img src="./pics/close.png" onclick="closeSide()" alt="" />
+                    </div>
+
+                    <div class="logo-img">
+                        <a href="home.html" class="logo-link">
+                            <!-- <img src="./pics/" class="logo" alt=""> -->
+                            مكه_تك
+                        </a>
+                    </div>
+
+                    <div class="side-social">
+                        <ul>
+                            <li>
+                                <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="side-nav-links">
+                        <ul>
+                            <li class="side-li">
+                                <a href="#" class="side-link">عن الشركة</a>
+                            </li>
+                            <li class="side-li">
+                                <div class="down-btn">
+                                    <!-- <a href="#" class="side-link">الخدمات</a> -->
+                                    <button id="btn-click" onclick="openSlide()"><span>الخدمات</span> <i
+                                            class="fa-solid fa-angle-down"></i></button>
+
+                                    <div class="slide-body" id="slide-body">
+                                        <div class="slide-body-info">
+                                            <ul class="down-list">
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">تصميم المواقع الالكترونية</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">أرشفة المواقع الالكترونية</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">تصميم وبرمجة تطبيقات الجوال</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">تصميم المتاجر الالتكرونية</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">استضافة المواقع وتطبيقات الجوال</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">رؤية جميع الخدمات</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="side-li">
+                                <a href="#" class="side-link">اعمالنا</a>
+                            </li>
+                            <li class="side-li">
+                                <a href="#" class="side-link">المدونة</a>
+                            </li>
+                            <li class="side-li">
+                                <a href="#" class="side-link">تواصل معنا</a>
+                            </li>
+                            <div class="contact-li">
+                                <li>
+                                    <a href="#" class="whatsapp btn"><i class="fa-brands fa-whatsapp"></i> تواصل معنا
+                                        عبر
+                                        الواتساب</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="whatsapp btn"><i class="fa-regular fa-envelope"></i> تواصل مباشر
+                                        عبر
+                                        الايميل</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar end -->
+
+
+
+    <!-- header start -->
+    <section class="header-slider">
+        <div class="header-content">
+            <div class="swiper mySwiper-head">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./pics/back.jpg" />
+                        <div class=" slide-content">
+                            <h1>احصل علي تطبيق متجرك الان</h1>
+                            <p class="head-p-1">احصل علي تطبيق متجرك الان , وفر الوقت والجهد</p>
+                            <p class="head-p-2">لبرمجة وتصميم متجرك من الصفر واطلبه من مكه_تك</p>
+                            <a href="#" class="slide-link">
+                                اطلب الان
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./pics//back-2.webp" />
+                        <div class="slide-content">
+                            <h1>احصل علي تطبيق متجرك الان</h1>
+                            <p class="head-p-1">احصل علي تطبيق متجرك الان , وفر الوقت والجهد</p>
+                            <p class="head-p-2">لبرمجة وتصميم متجرك من الصفر واطلبه من مكه_تك</p>
+                            <a href="#" class="slide-link">
+                                اطلب الان
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./pics//background.png" />
+                        <div class="slide-content">
+                            <h1>منصة سناب فستان</h1>
+                            <p class="head-p-1">م هي منصة وساطة لبيع وبدل الفساتي</p>
+                            <p class="head-p-2">لبرمجة وتصميم متجرك من الصفر واطلبه من مكه_تك</p>
+                            <a href="#" class="slide-link">
+                                اطلب عمل مماثل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
+    </section>
+    <!-- header end -->
+
+
+    <!-- our servies start -->
+
+    <section class="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="service-head">
+                        <div class="head-title">
+                            <span>
+                                <img src="https://img.icons8.com/wired/64/null/administrative-tools.png" />
+                                الخدمات
+                            </span>
+                        </div>
+
+
+                        <h1> تصميم مواقع الكترونية و تطبيقات جوال مقدمة من شركة مكه تك</h1>
+
+                        <p> تصميم المواقع من أدوات التسويق الناجحة و يعتبر تصميم المواقع الالكترونية أحد أهم استراتيجية
+                            التسويق للمنتجات والعلامات التجارية و الشركات في السنوات الأخيرة </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="row">
+                    <div class="colom col-12 col-md-6 col-lg-4">
+                        <a class="service-link" href="#">
+                            <div class="service-detail box-1">
+                                <div class="box-img">
+                                    <img src="./pics/ui.png" alt="">
+                                </div>
+
+                                <div class="box-info">
+                                    <h3>تصميم وبرمجة تطبيقات الجوال</h3>
+
+                                    <p>نقدم خدمة استضافة المواقع بضعف الامكاني انتشرت مؤخرًا أنواع وأشكال مختلفة من
+                                        تطبيقات الهاتف المحمول التي تعتمد على أنظمة مختلفة مثل أنظمة andriod & ios ,
+                                        لا
+                                        تترد في طلب اي استفسارات مع متخصصين شركة مكه تك.</p>
+                                </div>
+
+                                <div class="icon-box icon-1">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" colom col-12 col-md-6 col-lg-4">
+                        <a class="service-link" href="#">
+                            <div class="service-detail box-2">
+                                <div class="box-img">
+                                    <img src="./pics/web-design.png" alt="">
+                                </div>
+
+                                <div class="box-info">
+                                    <h3>تصميم المواقع الالكترونية</h3>
+
+                                    <p>نقدم خدمة استضافة المواقع بضعف الامكانيات ونفس الاسعار , لا تترد في السؤال
+                                        علي
+                                        باقات اسعار مكه تك .</p>
+                                </div>
+
+                                <div class="icon-box icon-2">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="colom col-12 col-lg-4">
+                        <a class="service-link" href="#">
+                            <div class="service-detail box-3">
+                                <div class="box-img">
+                                    <img src="./pics/servers.png" alt="">
+                                </div>
+
+                                <div class="box-info">
+                                    <h3>استضافة المواقع وتطبيقات الجوال</h3>
+
+                                    <p>نقدم خدمة استضافة المواقع بضعف الامكانيابدا تصميم موقعك الان واجمع البيانات
+                                        والمعلومات عن عملائك , تواصل معنا عبر الواتساب او البريد الالكتروني واطلب
+                                        عرض
+                                        سعر لموقعك . </p>
+                                </div>
+
+                                <div class="icon-box icon-3">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our servies end -->
+
+
+
+    <!-- our projects start -->
+
+    <section class="project">
+        <div class="container">
+            <div class="project-head">
+                <div class="head-title">
+                    <span>
+                        <img src="./pics/copy.png" />
+                        الخدمات
+                    </span>
+                </div>
+
+                <div class="head-line">
+                    <h2>باقة من اخر اعمالنا</h2>
+
+                    <ul class="head-ul">
+                        <li class="filter active" data-filter="all">
+                            الكل
+                        </li>
+                        <li class="filter" data-filter=".e-commerce">
+                            متاجر الكترونية
+                        </li>
+                        <li class="filter" data-filter=".mop-app">
+                            تطبيقات الجوال
+                        </li>
+                        <li data-filter=".designs">
+                            تصميمات
+                        </li>
+                        <li class="filter" data-filter=".websites">
+                            المواقع
+                        </li>
+                        <li class="filter" data-filter=".ready-web">
+                            التطبيفات الجاهزه
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container-filter">
+                <div class="row">
+                    <div class="colom col-10 col-md-6 col-lg-4 mix all , designs , ready web">
+                        <div class="project-info">
+                            <a href="#" class="project-link">
+                                <div class="card-img">
+                                    <img src="./pics/ex-1.jpg" alt="">
+                                </div>
+                            </a>
+
+                            <div class="card-info">
+                                <div class="card-title">
+                                    <h4 class=""><a href="#">منصة اعلاف</a></h4>
+                                    <span class="tag">
+                                        تصميم موقع الكتروني
+                                    </span>
+                                </div>
+
+                                <p>منصة أعلاف الالكترونية تابعـــة لشركة المنصة للأعلاف المحدودة تم تأسيسها عام
+                                    2019,تقدم</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colom col-10 col-md-6 col-lg-4 mix all , websites , mop-app , ready-web">
+                        <div class="project-info">
+                            <a href="#" class="project-link">
+                                <div class="card-img">
+                                    <img src="./pics/ex-2.jpeg" alt="">
+                                </div>
+                            </a>
+
+                            <div class="card-info">
+                                <div class="card-title">
+                                    <h4 class=""><a href="#">تطبيق عابر</a></h4>
+                                    <span class="tag">
+                                        تصميم موقع الكتروني
+                                    </span>
+                                </div>
+
+                                <p>منصة أعلاف الالكترونية تابعـــة المحدودة تم تأسيسها عام
+                                    2019,تقدم
+                                    لعملائها حلول تسويقية الأصعد</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colom col-10 col-md-6 col-lg-4 mix all , designs , ready web , e-commerce">
+                        <div class="project-info">
+                            <a href="#" class="project-link">
+                                <div class="card-img">
+                                    <img src="./pics/ex-3.jpeg" alt="">
+                                </div>
+                            </a>
+
+                            <div class="card-info">
+                                <div class="card-title">
+                                    <h4 class=""><a href="#">مظهر الجمال</a></h4>
+                                    <span class="tag">
+                                        تصميم موقع الكتروني
+                                    </span>
+                                </div>
+
+                                <p>منصة أعلاف الالكترونية تابعـــة لشركة المنصة للأعلاف المحدودة تم تأسيسها عام
+                                    2019,تقدم
+                                    لعملائها حلول تسويقية </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colom col-10 col-md-6 col-lg-4 mix all , designs , e-commerce , ready-web"
+                        data-sort="value">
+                        <div class="project-info">
+                            <a href="#" class="project-link">
+                                <div class="card-img">
+                                    <img src="./pics/ex-3.jpeg" alt="">
+                                </div>
+                            </a>
+
+                            <div class="card-info">
+                                <div class="card-title">
+                                    <h4 class=""><a href="#">مظهر الجمال</a></h4>
+                                    <span class="tag">
+                                        تصميم موقع الكتروني
+                                    </span>
+                                </div>
+
+                                <p>منصة أعلاف الالكترونية تابعـــة لشركة المنصة للأعلاف المحدودة تم تأسيسها عام
+                                    2019,تقدم
+                                    لعملائها حلول تسويقية </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colom col-10 col-md-6 col-lg-4 mix all , e-commerce , mop-app" data-sort="value">
+                        <div class="project-info">
+                            <a href="#" class="project-link">
+                                <div class="card-img">
+                                    <img src="./pics/ex-3.jpeg" alt="">
+                                </div>
+                            </a>
+
+                            <div class="card-info">
+                                <div class="card-title">
+                                    <h4 class=""><a href="#">مظهر الجمال</a></h4>
+                                    <span class="tag">
+                                        تصميم موقع الكتروني
+                                    </span>
+                                </div>
+
+                                <p>منصة أعلاف الالكترونية تابعـــة لشركة المنصة للأعلاف المحدودة تم تأسيسها عام
+                                    2019,تقدم
+                                    لعملائها حلول تسويقية </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="colom col-10 col-md-6 col-lg-4 mix all , e-commerce , websites , ready-web"
+                        data-sort="value">
+                        <div class="project-info">
+                            <a href="#" class="project-link">
+                                <div class="card-img">
+                                    <img src="./pics/ex-3.jpeg" alt="">
+                                </div>
+                            </a>
+
+                            <div class="card-info">
+                                <div class="card-title">
+                                    <h4 class=""><a href="#">مظهر الجمال</a></h4>
+                                    <span class="tag">
+                                        تصميم موقع الكتروني
+                                    </span>
+                                </div>
+
+                                <p>منصة أعلاف الالكترونية تابعـــة لشركة المنصة للأعلاف المحدودة تم تأسيسها عام
+                                    2019,تقدم
+                                    لعملائها حلول تسويقية </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more-btn">
+                <button class="more">عرض المزيد <i class="fa-solid fa-arrow-down"></i></button>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- our projects end -->
+
+
+
+    <!-- our clients start -->
+
+    <section class="clients">
+        <div class="container">
+            <div class="clients-head">
+                <div class="head-title">
+                    <span>
+                        <img src="./pics/client.png" />
+                        عملائنا وشركاء النجاح
+                    </span>
+
+                </div>
+
+                <div class="head-line">
+                    <h2>مجموعة كبيرة من المؤسسات والشركات الخاصة والأفراد</h2>
+                </div>
+            </div>
+
+
+            <div class="swiper mySwiper-client">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./pics/logo-1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./pics/logo-2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./pics/logo-3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./pics/logo-4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./pics/logo-5.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./pics/logo-6.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./pics/logo-7.png" alt=""></div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our clients end -->
+
+
+
+    <!-- clients reviews start -->
+
+    <section class="review">
+        <div class="container">
+            <div class="review-head">
+                <div class="head-title">
+                    <span>
+                        <img src="./pics/star.png" />
+                        تقييمات خدماتنا
+                    </span>
+
+                </div>
+
+                <div class="head-line">
+                    <h2>ما يقوله عملائنا عن خدمات مكه تك</h2>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-11 col-sm-12">
+                    <div class="swiper mySwiper-review">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="review-slide-content">
+                                    <i class="fa-solid fa-quote-right"></i>
+
+                                    <div class="card-img">
+                                        <img src="./pics/user.png" alt="">
+                                    </div>
+
+                                    <div class="card-info">
+                                        <div class="card-info-top">
+                                            <h5>خدمة ممتازة – منصة اعلاف </h5>
+
+                                            <p>مع نهاية العام الجديد , اشكر فريق العمل الجيد الذي كان له دور كبير في
+                                                اهدائي
+                                                معرفتهم
+                                                ومهاراتهم .. كنتم علي قدر عالي من المسؤلية والفكر الجيد .. حققت بكم
+                                                اهدافي
+                                                وبعلمكم
+                                                ومهارتكم حققنا جل اهدافنا بتاسيس مشروع منصة اعلاف .. لكم كل تقديري
+                                                واحترامي وبكم
+                                                سنصل
+                                                لهدفنا النهائي </p>
+                                        </div>
+
+                                        <div class="card-info-bottom">
+                                            <h6>شركة ماش</h6>
+                                            <span>مدير عام المشاريع بشركة ماش</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-slide-content">
+                                    <i class="fa-solid fa-quote-right"></i>
+
+                                    <div class="card-img">
+                                        <img src="./pics/user.png" alt="">
+                                    </div>
+
+                                    <div class="card-info">
+                                        <div class="card-info-top">
+                                            <h5>سلاسة التواصل </h5>
+
+                                            <p>شكراً أصول تك على التعامل الراقي…. والتعاون والتفاني في العمل كانت تجربة
+                                                رائعة
+                                                معكم
+                                                ولو اردت تنفيذ تطبيق آخر سوف انفذ معكم مره أخرى. اسأل الله لكم التوفيق
+                                                والنجاح….
+                                            </p>
+                                        </div>
+
+                                        <div class="card-info-bottom">
+                                            <h6>عبد الرحمن الحارثي</h6>
+                                            <span>المدير العام لمنصة سناب فستان</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-slide-content">
+                                    <i class="fa-solid fa-quote-right"></i>
+
+                                    <div class="card-img">
+                                        <img src="./pics/user.png" alt="">
+                                    </div>
+
+                                    <div class="card-info">
+                                        <div class="card-info-top">
+                                            <h5>خدمة رائعة – تطبيق سناب فستان </h5>
+
+                                            <p>مع نهاية العام الجديد , اشكر فريق العمل الجيد الذي كان له دور كبير في
+                                                اهدائي
+                                                معرفتهم
+                                                ومهاراتهم .. كنتم علي قدر عالي من المسؤلية والفكر الجيد .. حققت بكم
+                                                اهدافي
+                                                وبعلمكم
+                                                ومهارتكم حققنا جل اهدافنا بتاسيس مشروع منصة اعلاف .. لكم كل تقديري
+                                                واحترامي وبكم
+                                                سنصل لهدفنا النهائي </p>
+                                        </div>
+
+                                        <div class="card-info-bottom">
+                                            <h6>شركة ماش</h6>
+                                            <span>مدير عام المشاريع بشركة ماش</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-slide-content">
+                                    <i class="fa-solid fa-quote-right"></i>
+
+                                    <div class="card-img">
+                                        <img src="./pics/user.png" alt="">
+                                    </div>
+
+                                    <div class="card-info">
+                                        <div class="card-info-top">
+                                            <h5>خدمة ممتازة</h5>
+
+                                            <p>مع نهاية العام الجديد , اشكر فريق العمل الجيد الذي كان له دور كبير في
+                                                اهدائي
+                                                معرفتهم
+                                                ومهاراتهم .. كنتم علي قدر عالي من المسؤلية والفكر الجيد .. حققت بكم
+                                                اهدافي
+                                                وبعلمكم
+                                                ومهارتكم حققنا جل اهدافنا بتاسيس مشروع منصة اعلاف .. لكم كل تقديري
+                                                واحترامي وبكم
+                                                سنصل
+                                                لهدفنا النهائي </p>
+                                        </div>
+
+                                        <div class="card-info-bottom">
+                                            <h6>شركة ماش</h6>
+                                            <span>مدير عام المشاريع بشركة ماش</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-slide-content">
+                                    <i class="fa-solid fa-quote-right"></i>
+
+                                    <div class="card-img">
+                                        <img src="./pics/user.png" alt="">
+                                    </div>
+
+                                    <div class="card-info">
+                                        <div class="card-info-top">
+                                            <h5>خدمة ممتازة</h5>
+
+                                            <p>مع نهاية العام الجديد , اشكر فريق العمل الجيد الذي كان له دور كبير في
+                                                اهدائي
+                                                معرفتهم
+                                                ومهاراتهم .. كنتم علي قدر عالي من المسؤلية والفكر الجيد .. حققت بكم
+                                                اهدافي
+                                                وبعلمكم
+                                                ومهارتكم حققنا جل اهدافنا بتاسيس مشروع منصة اعلاف .. لكم كل تقديري
+                                                واحترامي وبكم
+                                                سنصل
+                                                لهدفنا النهائي </p>
+                                        </div>
+
+                                        <div class="card-info-bottom">
+                                            <h6>شركة ماش</h6>
+                                            <span>مدير عام المشاريع بشركة ماش</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- clients reviews end -->
+
+
+    <!-- contact start -->
+
+    <section class="contact">
+        <div class="row">
+
+            <div class="contact-head">
+                <div class="head-title">
+                    <span>
+                        <img src="./pics/contact.png" />
+                        تواصل معنا
+                    </span>
+
+                </div>
+
+                <div class="head-line">
+                    <h2>طرق مباشرة للتواصل معنا</h2>
+                </div>
+            </div>
+
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13635.11408823602!2d31.753729200000006!3d31.309865999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1672265436774!5m2!1sar!2seg"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+                <div class="contact-details">
+                    <ul class="contact-ul">
+                        <li>
+                            <h4>التواصل عبر الواتساب</h4>
+                            <div class="link-cover">
+                                <div class="link-icon icon-1">
+                                    <img class="img-1" src="./pics/whatsapp-c.png" alt="">
+                                </div>
+
+                                <div class="link-path link-1">
+                                    <a href="#">
+                                        01045697676+
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>الاتصال والاستفسار</h4>
+                            <div class="link-cover">
+                                <div class="link-icon icon-2">
+                                    <img class="img-2" src="./pics/phone-call.png" alt="">
+                                </div>
+
+                                <div class="link-path link-2">
+                                    <a href="#">
+                                        01045697676+
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>المراسلة المباشرة</h4>
+                            <div class="link-cover">
+                                <div class="link-icon icon-3">
+                                    <img class="img-3" src="./pics/email.png" alt="">
+                                </div>
+
+                                <div class="link-path link-3">
+                                    <a href="#">
+                                        our@makkahtech.com
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>الوصول للعنوان</h4>
+                            <div class="link-cover">
+                                <div class="link-icon icon-4">
+                                    <img class="img-4" src="./pics/location.png" alt="">
+                                </div>
+
+                                <div class="link-path link-4">
+                                    <a href="#">
+                                        الوصول للعنوان
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact end -->
+
+
+
+    <!-- footer start -->
+    <footer class="my-footer">
+        <div class="footer-cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="footer-content">
+                            <h1>نحن نحب أن نسمع منك <img src="./pics/happiness.png" alt=""></h1>
+
+                            <div class="sec-row row">
+                                <div class="f-col col-12 col-sm-6">
+                                    <div class="right-col">
+                                        <h3>نتشرف بزيارتكم</h3>
+                                        <a href="#">السويدي الغربي، الرياض- الدور الأول - مكتب 2 - عمارة صيدلية
+                                            الدواء</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="left-col">
+                                        <h3>تواصل معنا</h3>
+                                        <ul class="footer-contact-ul">
+                                            <li>
+                                                <a href="#" class="footer-ul-link"><i class="fa-brands fa-whatsapp"></i>
+                                                    78668349833423+</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="footer-ul-link"><i class="fa-brands fa-whatsapp"></i>
+                                                    201085445875+</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="footer-ul-link"><i
+                                                        class="fa-brands fa-instagram"></i>
+                                                    our@makkahtec.com</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="footer-content-2">
+                            <h3 class="head-1">روابط سريعة</h3>
+
+                            <ul class="speed-ul">
+                                <li>
+                                    <a href="#">تصميم المواقع الالكترونية</a>
+                                </li>
+                                <li>
+                                    <a href="#">تصميم وبرمجة تطبيقات الجوال</a>
+                                </li>
+                                <li>
+                                    <a href="#">تصميم المتاجر الالكترونية</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="footer-content-2">
+                            <h3 class="head-2">تابعنا علي شبكات التواصل</h3>
+                            <ul class="social-ul">
+                                <li>
+                                    <a href="#"><img src="./pics/instagram.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./pics/twitter.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./pics/facebook.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="bottom-sec">
+        <div class="container">
+            <div class="low">
+                <button onclick="scrollUp()"><i class="fa-solid fa-arrow-up"></i></button>
+                <p>©2022, مكه تك لتصميم وبرمجة المواقع وتطبيقات الجوال جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </section>
+    <!-- footer end -->
+
+
+
+
+    <!-- custom cursor -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
+        integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/cursor.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/scrollToUp.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper-head", {
+            spaceBetween: 30,
+            effect: "fade",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+            autoplay: {
+                delay: 5500,
+                disableOnInteraction: false,
+            },
+        });
+
+        var swiper_client = new Swiper(".mySwiper-client", {
+            spaceBetween: 20,
+            slidesPerView: 6,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                576: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 5,
+                    spaceBetween: 30,
+                },
+                1200: {
+                    slidesPerView: 6,
+                    spaceBetween: 20,
+                },
+            },
+
+        });
+
+
+        var swiper_client = new Swiper(".mySwiper-review", {
+            spaceBetween: 30,
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+
+        });
+
+
+        var mixer = mixitup('.container-filter');
+
+    </script>
+</body>
+
+</html>
