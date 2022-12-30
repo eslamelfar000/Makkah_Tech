@@ -419,6 +419,10 @@ body {
   direction: rtl !important;
 }
 
+.project .row .colom {
+  margin-bottom: 30px;
+}
+
 .project .project-head {
   margin-bottom: 35px;
   direction: rtl !important;
@@ -496,23 +500,43 @@ body {
   text-decoration: none;
   color: black;
   display: flex;
+  height: 100%;
 }
 
 .project .row .project-info {
   position: relative;
   width: 100%;
   overflow: hidden;
-  /* padding: 10px;
-  border: 2px dashed var(--six-color);
-  border-radius: 5px; */
+  padding: 15px;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.project .row .project-info::after {
+  position: absolute;
+  content: "";
+  background: var(--one-color);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  z-index: -1;
+  border-radius: 10px;
 }
 
 .project .row .project-info .card-img {
   position: relative;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 10px 10px 0px 0px;
   height: 250px;
   display: flex;
+  transition: 0.4s;
+}
+
+.project .row .project-info:hover > .card-img {
+  transform: translateY(-20px);
 }
 
 .project .row .project-info .project-link .card-img::before {
@@ -522,14 +546,23 @@ body {
   left: 0;
   width: 100%;
   height: 250px;
-  background: rgba(0, 0, 0, 0.168);
-  transition: 0.4s;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.123) 70%,
+    rgb(0, 110, 255)
+  );
+
+  transition: background 1s ease-out;
   z-index: 1;
-  border-radius: 5px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .project .row .project-info:hover > .project-link .card-img::before {
-  background: rgba(0, 0, 0, 0.52);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.123) 70%,
+    rgb(0, 110, 255)
+  );
 }
 
 .project .row .project-info .card-img img {
@@ -543,34 +576,43 @@ body {
 }
 
 .project .row .project-info .card-info {
-  padding: 10px 5px 0px 5px;
+  padding: 10px 0px 10px 0px;
 }
 
 .project .row .project-info .card-info .card-title {
   display: flex;
   align-items: center;
+  align-content: center;
+  align-self: center;
   justify-content: space-between;
   margin-bottom: 10px;
   padding-bottom: 5px;
-  border-bottom: 1px solid rgb(237, 237, 237);
+  border-bottom: 1px solid rgba(220, 220, 220, 0.226);
+  color: white;
+  padding: 7px;
 }
 
 .project .row .project-info .card-info .tag {
   font-size: 13px;
-  opacity: 0.5;
+  opacity: 0.8;
+}
+
+.project .row .project-info .card-info .card-title h4 {
+  margin-bottom: 0;
+  margin-top: -3px;
 }
 
 .project .row .project-info .card-info .card-title h4 a {
-  font-size: 18px;
+  font-size: 17px;
   text-decoration: none;
-  color: black;
+  color: white;
   transition: 0.4s;
 }
 
 .project .row .project-info .card-info p {
   font-size: 15px;
   opacity: 0.7;
-  margin-bottom: 40px !important;
+  margin-bottom: 0;
 }
 
 .project .row .project-info:hover > .card-info .card-title h4 a {
@@ -1076,20 +1118,12 @@ body {
 
 .contact .map .contact-details .contact-form .input-info span {
   position: absolute;
-  top: 50%;
-  right: 5px;
+  top: -16px;
+  right: 15px;
   padding: 5px 20px;
   font-size: 13px;
-  transform: translateY(-50%);
   transition: 0.4s;
-  z-index: -1;
-}
-
-.contact .map .contact-details .contact-form .input-info .text-span {
-  position: absolute;
-  top: 30px;
-  right: 5px;
-  z-index: -1;
+  background: white;
 }
 
 .contact .map .contact-details .contact-form .input-info input,
@@ -1117,26 +1151,8 @@ body {
   color: var(--six-color);
 }
 
-.contact .map .contact-details .contact-form .input-info input:focus + span {
-  top: -17px;
-  right: 20px;
-  transform: translateY(0);
-  background: white;
-  z-index: 1;
-  color: var(--six-color);
-}
-
-.contact
-  .map
-  .contact-details
-  .contact-form
-  .input-info
-  textarea:focus
-  + .text-span {
-  top: -3px;
-  right: 20px;
-  background: white;
-  z-index: 1;
+.contact .map .contact-details .contact-form .input-info input:focus + span,
+.contact .map .contact-details .contact-form .input-info textarea:focus + span {
   color: var(--six-color);
 }
 
