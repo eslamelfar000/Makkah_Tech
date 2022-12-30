@@ -386,6 +386,7 @@ body {
   .company-details .row .detail-ul li:nth-child(1) img {
     width: 60px;
     height: 60px;
+    margin-bottom: 4px;
   }
 
   .company-details .row .detail-ul li span {
@@ -512,6 +513,15 @@ body {
 .our-message .row .message-info:hover > .message-detail p {
   color: var(--one-color);
   opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .our-message .message-head {
+    margin-bottom: 15px;
+  }
+  .our-message .message-head .head-line h2 {
+    font-size: 22px;
+  }
 }
 
 /* message section end */
