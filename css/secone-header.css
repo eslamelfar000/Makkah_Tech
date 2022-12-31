@@ -22,10 +22,14 @@
   padding: 200px 0px 130px 0px;
   text-align: center;
   position: relative;
+}
+
+.second-header .sec-contact-cover {
+  position: relative;
   z-index: 1;
 }
 
-.second-header .sec-cover::after {
+.second-header .sec-contact-cover::after {
   position: absolute;
   content: "";
   width: 100%;
