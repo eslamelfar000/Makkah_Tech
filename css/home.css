@@ -1218,16 +1218,10 @@ body {
   margin-bottom: 35px;
 }
 
-.contact .map .contact-details .contact-ul li a {
-  text-decoration: none;
-  color: black;
-  text-align: center;
-}
-
 .contact .map .contact-details .contact-ul li h4 {
   font-size: 17px;
   margin-bottom: 10px;
-  color: green;
+  color: #25d366;
 }
 
 .contact .map .contact-details .contact-ul li:nth-child(2) h4 {
@@ -1249,7 +1243,7 @@ body {
 
 .contact .map .contact-details .contact-ul li .link-cover .link-icon {
   margin-left: 15px;
-  border: 1px solid green;
+  border: 1px solid #25d366;
   border-radius: 10px;
   padding: 10px;
   transition: 0.4s;
@@ -1273,8 +1267,8 @@ body {
 }
 
 .contact .map .contact-details .contact-ul li .link-cover .icon-1 .img-1 {
-  filter: invert(30%) sepia(96%) saturate(4000%) hue-rotate(113deg)
-    brightness(99%) contrast(97%);
+  filter: invert(67%) sepia(29%) saturate(1098%) hue-rotate(89deg)
+    brightness(93%) contrast(93%);
 }
 .contact .map .contact-details .contact-ul li .link-cover .icon-2 .img-2 {
   filter: invert(25%) sepia(100%) saturate(2635%) hue-rotate(207deg)
@@ -1293,12 +1287,12 @@ body {
 }
 
 .contact .map .contact-details .contact-ul li .link-cover .link-path {
-  border: 1px solid green;
+  border: 1px solid #25d366;
   border-radius: 10px;
   width: 100%;
   display: flex;
   font-size: 13px;
-  background: green;
+  background: #25d366;
   transition: 0.4s;
 }
 
@@ -1319,10 +1313,13 @@ body {
   width: 100%;
   padding: 10px 20px;
   color: white;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .contact .map .contact-details .contact-ul li .link-cover:hover > .icon-1 {
-  background: green;
+  background: #25d366;
 }
 
 .contact .map .contact-details .contact-ul li .link-cover:hover > .icon-2 {
@@ -1351,7 +1348,7 @@ body {
   background: none;
 }
 .contact .map .contact-details .contact-ul li .link-cover:hover > .link-1 a {
-  color: green;
+  color: #25d366;
 }
 .contact .map .contact-details .contact-ul li .link-cover:hover > .link-2 a {
   color: var(--one-color);
