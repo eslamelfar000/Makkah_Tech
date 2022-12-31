@@ -122,6 +122,23 @@ body {
   font-weight: 800;
 }
 
+.header-slider .header-content .swiper-pagination-bullet-active-main {
+  /* transform: scale(1.1); */
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-horizontal.swiper-rtl
+  > .swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet {
+  color: white !important;
+  background: white;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets {
+  bottom: 20px;
+}
+
 @media (max-width: 1400px) {
   .swiper-slide {
     height: 500px;
