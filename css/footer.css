@@ -10,11 +10,21 @@
   overflow: hidden;
   position: relative;
   direction: rtl !important;
-  background: url(../pics/dark.jpg);
+  background: url(../pics/web-back8.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center 100%;
+  /* background-attachment: fixed; */
   /* z-index: -1; */
+}
+
+.my-footer .background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 
 .my-footer .footer-cover {
@@ -22,10 +32,10 @@
   /* background: rgba(0, 0, 0, 0.583); */
   position: relative;
   background: linear-gradient(
-    45deg,
-    rgba(0, 102, 255, 0.605) 20%,
-    rgba(255, 57, 57, 0.604),
-    rgba(255, 162, 0, 0.545) 80%
+    40deg,
+    rgba(0, 63, 157, 0.738) 20%,
+    rgba(164, 0, 0, 0.729),
+    rgba(197, 125, 0, 0.776) 80%
   );
 
   color: white;
