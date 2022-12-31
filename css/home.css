@@ -1066,17 +1066,9 @@ body {
   justify-content: center;
 }
 
-.contact .row .colom:nth-child(1),
-.contact .row .colom:nth-child(3) {
+.contact .row .colom,
+.contact .row .colom {
   margin-bottom: 40px;
-}
-
-.contact .row .colom:nth-child(3) {
-  order: 2;
-}
-
-.contact .row .colom:nth-child(1) {
-  order: 1;
 }
 
 .contact .contact-head {
