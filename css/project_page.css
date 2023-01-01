@@ -61,6 +61,10 @@ body {
   justify-content: center;
 }
 
+.project-details .row .project-info {
+  margin-bottom: 50px;
+}
+
 .project-details .row .project-info .bigSlider {
   width: 100%;
   height: 500px;
@@ -246,17 +250,17 @@ body {
   margin-top: 30px;
 }
 
-.project-details .about-project .project-title {
-  margin-bottom: 50px;
+.project-details .project-title {
+  margin-bottom: 30px;
 }
 
-.project-details .about-project .project-title img {
+.project-details .project-title img {
   width: 40px;
   height: 40px;
   margin-left: 5px;
 }
 
-.project-details .about-project .project-title h2 {
+.project-details .project-title h2 {
   font-size: 30px;
   position: relative;
   padding-bottom: 15px;
@@ -264,7 +268,7 @@ body {
   font-weight: 700;
 }
 
-.project-details .about-project .project-title h2::before {
+.project-details .project-title h2::before {
   position: absolute;
   content: "";
   width: 30%;
