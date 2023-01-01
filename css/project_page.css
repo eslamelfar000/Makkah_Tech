@@ -363,18 +363,26 @@ body {
     margin-bottom: 40px;
   }
 
-  .project-details .about-project .project-title h2::before {
+  .project-details .project-title h2::before {
     width: 50%;
+  }
+
+  .project-details {
+    padding: 50px 0px;
+  }
+
+  .project-details .row .project-info .miniSlider {
+    height: 70px;
   }
 }
 
 @media (max-width: 575px) {
-  .project-details .about-project .project-title h2 {
+  .project-details .project-title h2 {
     font-size: 23px;
     text-align: center;
   }
 
-  .project-details .about-project .project-title h2::before {
+  .project-details .project-title h2::before {
     width: 100%;
   }
 }
