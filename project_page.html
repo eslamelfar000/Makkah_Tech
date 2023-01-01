@@ -253,7 +253,7 @@
             <div class="row">
                 <div class="colom col-11 col-md-8 col-lg-7">
                     <div class="project-info">
-                        <div class="swiper mySwiper-project">
+                        <!-- <div class="swiper mySwiper-project">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <img src="./pics/web-back1.jpg" />
@@ -268,6 +268,50 @@
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-pagination"></div>
+                        </div> -->
+
+
+
+                        <div style="--swiper-navigation-color: black; --swiper-pagination-color: black"
+                            class="swiper mySwiper2 bigSlider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./pics/web-back1.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./pics/background.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./pics/web-back4.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./pics/web-back5.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./pics/web-back9.jpg" />
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div thumbsSlider="" class="swiper mySwiper miniSlider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./pics/web-back1.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./pics/background.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./pics/web-back4.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./pics/web-back5.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./pics/web-back9.jpg" />
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -487,21 +531,40 @@
 
 
     <script>
-        var swiper = new Swiper(".mySwiper-project", {
-            spaceBetween: 30,
-            effect: "fade",
+        // var swiper = new Swiper(".mySwiper-project", {
+        //     spaceBetween: 30,
+        //     effect: "fade",
+        //     navigation: {
+        //         nextEl: ".swiper-button-next",
+        //         prevEl: ".swiper-button-prev",
+        //     },
+        //     loop: true,
+        //     // autoplay: {
+        //     //     delay: 5500,
+        //     //     disableOnInteraction: false,
+        //     // },
+        //     pagination: {
+        //         el: ".swiper-pagination",
+        //         dynamicBullets: true,
+        //     },
+        // });
+
+        var swiper = new Swiper(".miniSlider", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".bigSlider", {
+            loop: true,
+            spaceBetween: 10,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-            loop: true,
-            // autoplay: {
-            //     delay: 5500,
-            //     disableOnInteraction: false,
-            // },
-            pagination: {
-                el: ".swiper-pagination",
-                dynamicBullets: true,
+            thumbs: {
+                swiper: swiper,
             },
         });
     </script>
