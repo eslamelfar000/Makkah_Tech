@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap");
+
+:root {
+  --one-color: rgb(0, 110, 255);
+  --two-color: orange;
+  --three-color: rgb(218, 233, 255);
+  --four-color: rgb(255, 242, 219);
+  --five-color: #fbe6e6;
+  --six-color: #e95557;
+  --seven-color: rgb(27, 27, 27);
+  --eight-color: green;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.project-details {
+  padding: 100px 0px;
+  width: 100%;
+  position: relative;
+  direction: rtl !important;
+}
+
+.project-details .float-box {
+  position: absolute;
+  top: -70px;
+  left: 100px;
+  z-index: 10;
+  text-align: center;
+}
+
+.project-details .float-box .icon {
+  margin-bottom: 5px;
+  font-size: 45px;
+}
+
+.project-details .float-box .call a {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+  text-align: center;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700 !important;
+}
+
+.project-details .float-box .call a:hover {
+  color: var(--two-color);
+}
+
+.project-details .float-box .call a h4 {
+  font-size: 17px;
+  font-size: 900;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700 !important;
+}
+
+.project-details .row {
+  display: flex;
+  justify-content: center;
+}
+
+.project-details .row .project-info .swiper {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.project-details .row .project-info .swiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.project-details .row .project-info .swiper .swiper-slide::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.379);
+}
+
+.project-details .row .project-info .swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-details .row .project-info .swiper-button-prev,
+.project-details .row .project-info .swiper-button-next {
+  font-size: 12px !important;
+  color: white;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.project-details .row .project-info .swiper-button-prev:hover,
+.project-details .row .project-info .swiper-button-next:hover {
+  opacity: 1;
+}
+
+.project-details .row .project-info .swiper-button-prev::after,
+.project-details .row .project-info .swiper-button-next::after {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.project-details .row .project-info .swiper-pagination-bullet-active-main {
+  /* transform: scale(1.1); */
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-horizontal.swiper-rtl
+  > .swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet {
+  color: white !important;
+  background: white;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets {
+  bottom: 20px;
+}
+
+.project-details .project-links {
+  position: sticky;
+  top: 100px;
+}
+
+.project-details .project-links ul {
+  list-style: none;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+}
+
+.project-details .project-links ul li {
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+}
+
+.project-details .project-links ul li a {
+  text-decoration: none;
+  color: white;
+  background: var(--one-color);
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  transition: 0.4s;
+  border: 1px solid var(--one-color);
+  text-align: center;
+}
+
+.project-details .project-links ul li a i {
+  font-size: 22px;
+  margin-left: 10px;
+  transition: 0.4s;
+}
+
+.project-details .project-links ul li a:hover > i {
+  transform: rotate(360deg);
+}
+
+.project-details .project-links ul li:nth-child(2) a {
+  background: var(--six-color);
+  border: 1px solid var(--six-color);
+}
+
+.project-details .project-links ul li:nth-child(3) a {
+  background: var(--two-color);
+  border: 1px solid var(--two-color);
+}
+
+.project-details .project-links ul li:nth-child(4) a {
+  background: var(--seven-color);
+  border: 1px solid var(--seven-color);
+}
+
+.project-details .project-links ul li a:hover {
+  background: none;
+  color: var(--one-color);
+}
+
+.project-details .project-links ul li:nth-child(2) a:hover {
+  color: var(--six-color);
+}
+
+.project-details .project-links ul li:nth-child(3) a:hover {
+  color: var(--two-color);
+}
+
+.project-details .project-links ul li:nth-child(4) a:hover {
+  color: var(--seven-color);
+}
+
+.project-details .project-links .info-list {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid gainsboro;
+}
+
+.project-details .project-links .info-list li {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.project-details .project-links .info-list li i {
+  font-size: 20px;
+  margin-left: 15px;
+  color: var(--six-color);
+}
+
+.project-details .project-links .info-list li h5 {
+  font-weight: 700;
+  margin-bottom: 0px;
+  font-size: 17px;
+}
+
+.project-details .project-links .info-list li label {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px 10px;
+}
+
+.project-details .project-links .info-list li span {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: -5px;
+}
+
+.project-details .about-project {
+  margin-top: 30px;
+}
+
+.project-details .about-project .project-title {
+  margin-bottom: 50px;
+}
+
+.project-details .about-project .project-title img {
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+
+.project-details .about-project .project-title h2 {
+  font-size: 30px;
+  position: relative;
+  padding-bottom: 15px;
+  letter-spacing: 0.09cm;
+  font-weight: 700;
+}
+
+.project-details .about-project .project-title h2::before {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 5px;
+  border-bottom: 5px solid var(--six-color);
+  bottom: 0;
+  right: 0;
+}
+
+.project-details .about-project .article {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.project-details .about-project .article .article-info {
+  margin-bottom: 50px;
+}
+
+.project-details .about-project .article .article-title,
+.project-details .about-project .article .features-title {
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.project-details .about-project .article .article-title img,
+.project-details .about-project .article .features-title img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.project-details .about-project .article .article-body {
+  font-size: 16px;
+  opacity: 0.7;
+  line-height: 0.8cm;
+}
+
+.project-details .about-project .article .project-features {
+  list-style: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  padding-right: 20px;
+}
+
+.project-details .about-project .article .project-features li {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.project-details .about-project .article .project-features li i {
+  font-size: 18px;
+  color: var(--one-color);
+  margin-left: 10px;
+  padding: 5px;
+  transition: 0.4s;
+}
+
+.project-details .about-project .article .project-features li h5 {
+  font-size: 14px;
+  margin-bottom: 0px;
+  line-height: 0.7cm;
+}
+
+.project-details .about-project .article .project-features li:hover > i {
+  color: var(--two-color);
+}
+
+@media (max-width: 991px) {
+  .project-details .row .project-info .swiper {
+    height: 400px;
+  }
+
+  .project-details .more-col {
+    display: none;
+  }
+
+  .project-details .project-links .info-list li h5 {
+    font-size: 12px;
+  }
+  .project-details .project-links .info-list li span {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-details .float-box {
+    display: none;
+  }
+
+  .project-details .row .colom {
+    margin-bottom: 40px;
+  }
+
+  .project-details .about-project .project-title h2::before {
+    width: 50%;
+  }
+}
+
+@media (max-width: 575px) {
+  .project-details .about-project .project-title h2 {
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .project-details .about-project .project-title h2::before {
+    width: 100%;
+  }
+}
+
+@media (max-width: 475px) {
+  .project-details .row .project-info .swiper {
+    height: 350px;
+  }
+
+  .project-details .about-project .article .article-title,
+  .project-details .about-project .article .features-title {
+    font-size: 18px;
+  }
+}
