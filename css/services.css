@@ -1,0 +1,312 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.all-service {
+  padding: 100px 0px;
+  width: 100%;
+  position: relative;
+  direction: rtl !important;
+}
+
+.all-service .float-box {
+  position: absolute;
+  top: -70px;
+  left: 100px;
+  z-index: 10;
+  text-align: center;
+}
+
+.all-service .float-box .icon {
+  margin-bottom: 5px;
+  font-size: 45px;
+}
+
+.all-service .float-box .call a {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+  text-align: center;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700 !important;
+}
+
+.all-service .float-box .call a:hover {
+  color: var(--two-color);
+}
+
+.all-service .float-box .call a h4 {
+  font-size: 17px;
+  font-size: 900;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700 !important;
+}
+
+.all-service .row .service-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.all-service .row .service-filter .head-ul {
+  list-style: none;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.all-service .row .service-filter .head-ul li {
+  border: none;
+  background: var(--five-color);
+  color: var(--six-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: 0.3s;
+  margin-right: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.all-service .row .service-filter .head-ul .active,
+.all-service .row .service-filter .head-ul li:hover {
+  background: var(--one-color);
+  color: white;
+}
+
+.all-service .row .service-filter .result {
+  display: flex;
+  align-items: center;
+  background: var(--four-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.all-service .row .service-filter .result h4 {
+  font-size: 17px;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.all-service .row .service-filter .result span {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.all-service .row .colom {
+  margin-bottom: 50px;
+  z-index: 1;
+}
+
+.all-service .row .service-link {
+  text-decoration: none;
+  color: black;
+}
+
+.all-service .row .service-detail {
+  position: relative;
+  width: 100%;
+  padding: 30px;
+  padding-bottom: 45px;
+  text-align: center;
+  height: 100%;
+  background: var(--three-color);
+  border: 2px dashed var(--two-color);
+  border-radius: 20px;
+  transition: height 0.3s;
+}
+
+.all-service .row .box-1 {
+  background: var(--four-color);
+}
+
+.all-service .row .box-2 {
+  background: var(--five-color);
+  border: 2px dashed var(--six-color);
+}
+
+.all-service .row .box-3 {
+  border: 2px dashed var(--one-color);
+}
+
+.all-service .row .service-detail .box-img img {
+  width: 60px;
+  height: 60px;
+}
+
+.all-service .row .box-1 .box-img img {
+  filter: invert(60%) sepia(91%) saturate(1041%) hue-rotate(358deg)
+    brightness(100%) contrast(106%);
+}
+.all-service .row .box-2 .box-img img {
+  filter: invert(57%) sepia(89%) saturate(4456%) hue-rotate(327deg)
+    brightness(93%) contrast(96%);
+}
+.all-service .row .box-3 .box-img img {
+  filter: invert(24%) sepia(64%) saturate(3543%) hue-rotate(210deg)
+    brightness(107%) contrast(106%);
+}
+
+.all-service .row .service-detail .box-info {
+  margin-top: 20px;
+}
+
+.all-service .row .service-detail .box-info h3 {
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.all-service .row .service-detail .box-info p {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 5px;
+}
+
+.all-service .row .service-detail .icon-box {
+  position: absolute;
+  bottom: -30px;
+  padding: 15px 20px;
+  color: white;
+  font-size: 17px;
+  border-radius: 50%;
+  background: var(--two-color);
+  border: 2px dashed var(--two-color);
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+
+.all-service .row .service-detail .icon-2 {
+  background: var(--six-color);
+  border: 2px dashed var(--six-color);
+}
+
+.all-service .row .service-detail .icon-3 {
+  background: var(--one-color);
+  border: 2px dashed var(--one-color);
+}
+
+.all-service .row .service-detail:hover > .icon-1 {
+  background: white;
+  color: var(--two-color);
+}
+
+.all-service .row .service-detail:hover > .icon-2 {
+  background: white;
+  color: var(--six-color);
+}
+
+.all-service .row .service-detail:hover > .icon-3 {
+  background: white;
+  color: var(--one-color);
+}
+
+.all-service .row .more-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.all-service .row .more-btn .get-more {
+  border: 2px solid var(--six-color);
+  background: var(--six-color);
+  color: white;
+  font-size: 15px;
+  padding: 8px 40px;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.all-service .row .get-more:hover {
+  background: none;
+  color: var(--six-color);
+}
+
+@media (max-width: 1200px) {
+  .all-service .row .service-detail .box-info h3 {
+    font-size: 18px;
+  }
+  .all-service .row .service-detail .box-info p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991px) {
+  .all-service .row .service-filter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .all-service .row .service-filter .head-ul {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .all-service .float-box {
+    display: none;
+  }
+
+  .all-service {
+    padding: 50px 0px;
+  }
+
+  .all-service .row .service-filter .head-ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .all-service .row .service-filter .head-ul li {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .all-service .row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .all-service .row .service-head h1 {
+    font-size: 24px;
+  }
+
+  .all-service .row .service-head p {
+    font-size: 13px;
+  }
+
+  .all-service .row .service-filter .head-ul li {
+    font-size: 12px;
+  }
+
+  .all-service .row .service-filter .result h4 {
+    font-size: 14px;
+  }
+
+  .all-service .row .service-filter .result span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 435px) {
+  .all-service .row .service-filter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .all-service .row .service-filter .head-ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .all-service .row .service-filter .head-ul li {
+    margin-bottom: 10px;
+  }
+}
+
+/* our services end */

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="">
+    <link rel="stylesheet" href="./liberaries/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./liberaries/fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/cursor.css">
+    <link rel="stylesheet" href="./css/secone-header.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="icon" href="./pics/ava.png">
+    <title>الخدمات | مكه للتقنية - لخدمات تصميم وبرمجة المواقع وتطبيقات الهاتف</title>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <div class="nav-bar" id="nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="right-side">
+                    <div class="logo-img">
+                        <a href="home.html" class="logo-link">
+                            <!-- <img src="./pics/" class="logo" alt=""> -->
+                            مكه للتقنية
+                        </a>
+                    </div>
+
+                    <div class="page-links">
+                        <ul>
+                            <li class="li-link">
+                                <a href="about.html" class="link">عن الشركة</a>
+                            </li>
+                            <li class="li-link">
+                                <a href="services.html" class="link">الخدمات <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="down-list">
+                                    <img src="./pics/arrow.png" alt="">
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">تصميم المواقع الالكترونية</a>
+                                    </li>
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">أرشفة المواقع الالكترونية</a>
+                                    </li>
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">تصميم وبرمجة تطبيقات الجوال</a>
+                                    </li>
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">تصميم المتاجر الالتكرونية</a>
+                                    </li>
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">استضافة المواقع وتطبيقات الجوال</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li-link">
+                                <a href="#" class="link">اعمالنا</a>
+                            </li>
+                            <!-- <li class="li-link">
+                                <a href="#" class="link">المدونة</a>
+                            </li> -->
+                            <li class="li-link">
+                                <a href="#" class="link">تواصل معنا</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="left-side">
+                    <div class="nav-contact">
+                        <ul>
+                            <li>
+                                <a href="#" class="contact-link">our@makkahtech.com
+                                    <i class="fa-regular fa-envelope"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="contact-link">+09785458446453
+                                    <i class="fa-brands fa-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="side-icon">
+                        <div class="box" id="side-box" onclick="openSide()">
+                            <div class="all first-row">
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                            </div>
+                            <div class="all sec-row">
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                            </div>
+                            <div class="all last-row">
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="overlay" id="overlay">
+            <div class="side-nav" id="side">
+                <div class="side-content">
+                    <div class="close-btn">
+                        <img src="./pics/close.png" onclick="closeSide()" alt="" />
+                    </div>
+
+                    <div class="logo-img">
+                        <a href="home.html" class="logo-link">
+                            <!-- <img src="./pics/" class="logo" alt=""> -->
+                            مكه للتقنية
+                        </a>
+                    </div>
+
+                    <div class="side-social">
+                        <ul>
+                            <li>
+                                <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="side-nav-links">
+                        <ul>
+                            <li class="side-li">
+                                <a href="about.html" class="side-link">عن الشركة</a>
+                            </li>
+                            <li class="side-li">
+                                <div class="down-btn">
+                                    <!-- <a href="#" class="side-link">الخدمات</a> -->
+                                    <button id="btn-click" onclick="openSlide()"><span>الخدمات</span> <i
+                                            class="fa-solid fa-angle-down"></i></button>
+
+                                    <div class="slide-body" id="slide-body">
+                                        <div class="slide-body-info">
+                                            <ul class="down-list">
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">تصميم المواقع الالكترونية</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">أرشفة المواقع الالكترونية</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">تصميم وبرمجة تطبيقات الجوال</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">تصميم المتاجر الالتكرونية</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">استضافة المواقع وتطبيقات الجوال</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="services.html" class="down-link">رؤية جميع الخدمات</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="side-li">
+                                <a href="#" class="side-link">اعمالنا</a>
+                            </li>
+                            <!-- <li class="side-li">
+                                <a href="#" class="side-link">المدونة</a>
+                            </li> -->
+                            <li class="side-li">
+                                <a href="#" class="side-link">تواصل معنا</a>
+                            </li>
+                            <div class="contact-li">
+                                <li>
+                                    <a href="#" class="whatsapp btn"><i class="fa-brands fa-whatsapp"></i> تواصل معنا
+                                        عبر
+                                        الواتساب</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="whatsapp btn"><i class="fa-regular fa-envelope"></i> تواصل مباشر
+                                        عبر
+                                        الايميل</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar end -->
+
+
+    <!-- second header start -->
+    <section class="second-header">
+        <div class="sec-cover sec-contact-cover">
+            <div class="container">
+                <div class="sec-content">
+                    <div class="sec-title">
+                        <span>الخدمات</span>
+                    </div>
+
+                    <div class="sec-line">
+                        <a href="./home.html">الصفحة الرئيسية</a>
+                        <i class="fa-solid fa-angle-left"></i>
+                        <span>الخدمات</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- second header end -->
+
+
+    <section class="all-service">
+        <div class="container">
+
+            <div class="float-box">
+                <div class="icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+
+                <div class="call">
+                    <a href="#">
+                        <h4>هل لديك استفسار ؟</h4>
+                        <p>201035779954+</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="service-filter">
+                    <ul class="head-ul">
+                        <li class="filter active" data-filter="all">
+                            الكل
+                        </li>
+                        <li class="filter" data-filter=".e-commerce">
+                            متاجر الكترونية
+                        </li>
+                        <li class="filter" data-filter=".mop-app">
+                            تطبيقات الجوال
+                        </li>
+                        <li data-filter=".designs">
+                            تصميمات
+                        </li>
+                        <li class="filter" data-filter=".websites">
+                            المواقع
+                        </li>
+                        <li class="filter" data-filter=".ready-web">
+                            التطبيقات الجاهزه
+                        </li>
+                    </ul>
+
+
+                    <div class="result">
+                        <h4>النتيجة</h4> : <span>30</span>
+                    </div>
+                </div>
+
+
+                <div class="services-container-filter">
+                    <div class="row">
+                        <div class="colom col-11 col-md-6 col-lg-4 mix mop-app designs websites">
+                            <a class="service-link" href="#">
+                                <div class="service-detail box-1">
+                                    <div class="box-img">
+                                        <img src="./pics/ui.png" alt="">
+                                    </div>
+
+                                    <div class="box-info">
+                                        <h3>تصميم وبرمجة تطبيقات الجوال</h3>
+
+                                        <p>نقدم خدمة استضافة المواقع بضعف الامكاني انتشرت مؤخرًا أنواع وأشكال مختلفة
+                                            من
+                                            تطبيقات الهاتف المحمول التي تعتمد على أنظمة مختلفة مثل أنظمة andriod &
+                                            ios ,
+                                            لا
+                                            تترد في طلب اي استفسارات مع متخصصين شركة مكه تك.</p>
+                                    </div>
+
+                                    <div class="icon-box icon-1">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="colom col-11 col-md-6 col-lg-4 mix e-commerce websites">
+                            <a class="service-link" href="#">
+                                <div class="service-detail box-2">
+                                    <div class="box-img">
+                                        <img src="./pics/web-design.png" alt="">
+                                    </div>
+
+                                    <div class="box-info">
+                                        <h3>تصميم المواقع الالكترونية</h3>
+
+                                        <p>نقدم خدمة استضافة المواقع بضعف الامكانيات ونفس الاسعار , لا تترد في السؤال
+                                            علي
+                                            باقات اسعار مكه تك .</p>
+                                    </div>
+
+                                    <div class="icon-box icon-2">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="colom col-11 col-md-6 col-lg-4 mix mop-app ready-web">
+                            <a class="service-link" href="#">
+                                <div class="service-detail box-3">
+                                    <div class="box-img">
+                                        <img src="./pics/servers.png" alt="">
+                                    </div>
+
+                                    <div class="box-info">
+                                        <h3>استضافة المواقع وتطبيقات الجوال</h3>
+
+                                        <p>نقدم خدمة استضافة المواقع بضعف الامكانيابدا تصميم موقعك الان واجمع البيانات
+                                            والمعلومات عن عملائك , تواصل معنا عبر الواتساب او البريد الالكتروني واطلب
+                                            عرض
+                                            سعر لموقعك . </p>
+                                    </div>
+
+                                    <div class="icon-box icon-3">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="colom col-11 col-md-6 col-lg-4 mix e-commerce designs">
+                            <a class="service-link" href="#">
+                                <div class="service-detail box-2">
+                                    <div class="box-img">
+                                        <img src="./pics/archive.png" alt="">
+                                    </div>
+
+                                    <div class="box-info">
+                                        <h3>أرشفة المواقع الالكترونية</h3>
+
+                                        <p>أرشفة موقعك تحتاج إلى جهد وعمل لإنجازه بالشكل الأمثل والحصول على تقييم جيد من
+                                            جوجل ، هناك العديد من الخطوات والشروط التي يجب عليك القيام بها لإبلاغ جوجل
+                                            بموقعك وتحديثاتك وحفظها في أرشيف البحث ، ومن بين هذه الخطوات:</p>
+                                        <p>
+                                            – قم بإنشاء ملف sitemap (html- xml) وأرسله إلى Google ، فهو أحد أكثر العوامل
+                                            التي تساعد Google على الزحف داخل موقعك بسهولة وأرشفة جميع صفحاتك وبياناتك.
+                                        </p>
+                                    </div>
+
+                                    <div class="icon-box icon-2">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="colom col-11 col-md-6 col-lg-4 mix mop-app websites ready-web">
+                            <a class="service-link" href="#">
+                                <div class="service-detail box-3">
+                                    <div class="box-img">
+                                        <img src="./pics/ecommerce.png" alt="">
+                                    </div>
+
+                                    <div class="box-info">
+                                        <h3>تصميم المتاجر الكترونية</h3>
+
+                                        <p>يعد تصميم متجر إلكتروني خطوة مهمة للغاية لزيادة أرباحك من خلال التجارة
+                                            الإلكترونية والبيع عبر الإنترنت</p>
+                                        <p> ، ويشتمل تصميم المتجر على جميع الوسائل التي تساعدك على عرض منتجات شركتك وبدء
+                                            عملية البيع.</p>
+                                        <p>
+                                            أصول تك هي أفضل شركة تصميم متاجر وإنشاء للمتاجر الإلكترونية ، حيث نقدم لك
+                                            متجرًا احترافيًا متكاملًا يوفر لك حلولًا فريدة ومبتكرة تجعلك تدير عملية
+                                            البيع بسهولة </p>
+                                    </div>
+
+                                    <div class="icon-box icon-3">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="colom col-11 col-md-6 col-lg-4 mix ready-web">
+                            <a class="service-link" href="#">
+                                <div class="service-detail box-1">
+                                    <div class="box-img">
+                                        <img src="./pics/servers.png" alt="">
+                                    </div>
+
+                                    <div class="box-info">
+                                        <h3>خدمات التسويق الالكتروني</h3>
+
+                                        <p>أصبح التسويق الإلكتروني من أهم اهتمامات الشركات الناشئة والكبيرة والمصانع
+                                            والمطاعم والمحلات التجارية والقرى السياحية الصغيرة والكبيرة. تميز التسويق
+                                            الإلكتروني والتجارة الإلكترونية بفتح أسواق جديدة وعملاء مستهدفين ، حيث
+                                            يتجاوز التسويق الإلكتروني المنتج أو الخدمة من حدود التواجد الإقليمي في
+                                            الأسواق الإلكترونية سواء المحلية أو العالمية ، ويتمتع بالسرعة والواسعة تنتشر
+                                            في مختلف المجالات المختلفة ، ومن أهم قنوات التسويق الإلكتروني على الإنترنت
+                                            التسويق</p>
+                                    </div>
+
+                                    <div class="icon-box icon-1">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="colom col-11 col-md-6 col-lg-4 mix e-commerce designs">
+                            <a class="service-link" href="#">
+                                <div class="service-detail box-3">
+                                    <div class="box-img">
+                                        <img src="./pics/ecommerce-manage.png" alt="">
+                                    </div>
+
+                                    <div class="box-info">
+                                        <h3>ادارة المتاجر الالكترونية</h3>
+
+                                        <p>ادارة المتاجر الالكترونية في الآونة الأخيرة ، أصبحت المتاجر الإلكترونية ذات
+                                            أهمية كبيرة نظرًا لتنوعها وسهولة الوصول إليها. لا يفضل المستهلكون الذهاب
+                                            للتسوق ، بل أن السوق أصبح في متناولهم من  خلال الشراء الإلكتروني في تلك
+                                            المواقع المصممة خصيصًا للتجارة الإلكترونية. في بداية التجارة الإلكترونية ،
+                                            لم نكن نعرف كيف نتسوق عبر الإنترنت ، لذلك…</p>
+                                    </div>
+
+                                    <div class="icon-box icon-3">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="colom col-11 col-md-6 col-lg-4 mix mop-app websites ready-web">
+                            <a class="service-link" href="#">
+                                <div class="service-detail box-1">
+                                    <div class="box-img">
+                                        <img src="./pics/servers.png" alt="">
+                                    </div>
+
+                                    <div class="box-info">
+                                        <h3>خدمة ادارة السوشيال ميديا</h3>
+
+                                        <p>خدمة ادارة السوشيال ميديا  من أهم قنوات التسويق و لمعرفة أهمية  إدارة حسابات
+                                            السوشيال ميديا يجب أن تعرف أن موقع فيس بوك يحقق أكثر من ٢٥ مليار زيارة
+                                            شهريا، و موقع تويتر  يحقق 3.1 مليار زيارة شهريا، بينما يحصد انستجرام مليار و
+                                            ٢٠٠ الف زيارة شهريا. </p>
+                                    </div>
+
+                                    <div class="icon-box icon-1">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="colom col-11 col-md-6 col-lg-4 mix e-commerce designs ready-web">
+                            <a class="service-link" href="#">
+                                <div class="service-detail box-2">
+                                    <div class="box-img">
+                                        <img src="./pics/design.png" alt="">
+                                    </div>
+
+                                    <div class="box-info">
+                                        <h3>تصميم لوجو – تصميم شعار- logo</h3>
+
+                                        <p> تعريف الشعار (بالإنجليزيّة: Logo) هو رمز أو نصّ أو يمكن أن يكون يحتوي على
+                                            كليهما، لتمثيل منظَّمة أو شركة معيّنة من خلال صورة مرئيّة يمكن فهمها
+                                            والتعرّف عليها بسهولة، ويعمل الشعار على إيصال جوهر العلامة التجارية للشركة
+                                            أو المنظَّمة، مما يجعل عمليّة تصميم الشعار مهمّة صعبة لمصمم الجرافيك، لكنها
+                                            عملية إبداعية تتطلب الكثير من البحث…</p>
+                                    </div>
+
+                                    <div class="icon-box icon-2">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="more-btn">
+                    <button class="get-more">عرض المزيد</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- footer start -->
+    <footer class="my-footer">
+        <!-- <img class="background" src="./pics/web-back10.jpg" alt=""> -->
+        <div class="footer-cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="footer-content">
+                            <h1>نحن نحب أن نسمع منك <img src="./pics/happiness.png" alt=""></h1>
+
+                            <div class="sec-row row">
+                                <div class="f-col col-12 col-sm-6">
+                                    <div class="right-col">
+                                        <h3>نتشرف بزيارتكم</h3>
+                                        <a href="#">السويدي الغربي، الرياض- الدور الأول - مكتب 2 - عمارة صيدلية
+                                            الدواء</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="left-col">
+                                        <h3>تواصل معنا</h3>
+                                        <ul class="footer-contact-ul">
+                                            <li>
+                                                <a href="#" class="footer-ul-link"><i class="fa-brands fa-whatsapp"></i>
+                                                    78668349833423+</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="footer-ul-link"><i class="fa-brands fa-whatsapp"></i>
+                                                    201085445875+</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="footer-ul-link"><i
+                                                        class="fa-brands fa-instagram"></i>
+                                                    our@makkahtec.com</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="footer-content-2">
+                            <h3 class="head-1">روابط سريعة</h3>
+
+                            <ul class="speed-ul">
+                                <li>
+                                    <a href="#">تصميم المواقع الالكترونية</a>
+                                </li>
+                                <li>
+                                    <a href="#">تصميم وبرمجة تطبيقات الجوال</a>
+                                </li>
+                                <li>
+                                    <a href="#">تصميم المتاجر الالكترونية</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="footer-content-2">
+                            <h3 class="head-2">تابعنا علي شبكات التواصل</h3>
+                            <ul class="social-ul">
+                                <li>
+                                    <a href="#"><img src="./pics/instagram.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./pics/twitter.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./pics/facebook.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="bottom-sec">
+        <div class="container">
+            <div class="low">
+                <button onclick="scrollUp()"><i class="fa-solid fa-arrow-up"></i></button>
+                <p>©2022, مكه تك لتصميم وبرمجة المواقع وتطبيقات الجوال جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </section>
+    <!-- footer end -->
+
+
+
+
+    <!-- custom cursor -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
+        integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/cursor.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/scrollToUp.js"></script>
+    <script src="./js/home.js"></script>
+
+    <script>
+        var mixer = mixitup('.services-container-filter');
+    </script>
+</body>
+
+</html>
