@@ -1,0 +1,375 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* contact start */
+
+.contact {
+  padding: 80px 0px 0px 0px;
+  width: 100%;
+  position: relative;
+  direction: rtl !important;
+}
+
+.contact .float-box {
+  position: absolute;
+  top: -70px;
+  left: 100px;
+  z-index: 10;
+  text-align: center;
+}
+
+.contact .float-box .icon {
+  margin-bottom: 5px;
+  font-size: 45px;
+}
+
+.contact .float-box .call a {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+  text-align: center;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700 !important;
+}
+
+.contact .float-box .call a:hover {
+  color: var(--two-color);
+}
+
+.contact .float-box .call a h4 {
+  font-size: 17px;
+  font-size: 900;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700 !important;
+}
+
+.contact .row {
+  display: flex;
+  justify-content: center;
+}
+
+.contact .row .colom,
+.contact .row .colom {
+  margin-bottom: 40px;
+}
+
+.contact .contact-head {
+  margin-bottom: 10px;
+  direction: rtl !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact .contact-head .head-title {
+  padding-left: 10px;
+  width: auto;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.contact .contact-head span {
+  font-size: 15px;
+  padding-left: 20px;
+  border-radius: 20px;
+  background: var(--three-color);
+}
+
+.contact .contact-head .head-title img {
+  width: 40px;
+  height: 40px;
+  filter: invert();
+  background: var(--two-color);
+  padding: 7px;
+  border-radius: 0px 10px 10px 0px;
+  margin-left: 10px;
+}
+
+.contact .contact-head .head-line h2 {
+  font-size: 27px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contact .map .contact-details {
+  width: 100%;
+  padding: 60px 0px;
+}
+
+.contact .map .contact-details .contact-form {
+  margin-bottom: 30px;
+}
+
+.contact .map .contact-details .contact-form .form-line {
+  display: flex;
+}
+
+.contact .map .contact-details .contact-form .input-info {
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.contact .map .contact-details .contact-form .input-info span {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  padding: 0px 20px;
+  font-size: 12px;
+  transition: 0.4s;
+  background: white;
+}
+
+.contact .map .contact-details .contact-form .input-info input,
+.contact .map .contact-details .contact-form .input-info textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid rgb(212, 212, 212);
+  font-size: 13px;
+  opacity: 0.7;
+  outline: none;
+  transition: 0.4s;
+  background: white;
+}
+
+.contact .map .contact-details .contact-form .input-info textarea {
+  height: 250px;
+}
+
+.contact .map .contact-details .contact-form .input-info input:focus,
+.contact .map .contact-details .contact-form .input-info textarea:focus {
+  border-color: var(--six-color);
+  background: white;
+  opacity: 1;
+  color: var(--six-color);
+}
+
+.contact .map .contact-details .contact-form .input-info input:focus + span,
+.contact .map .contact-details .contact-form .input-info textarea:focus + span {
+  color: var(--six-color);
+}
+
+.contact .map .contact-details .contact-form input[type="submit"] {
+  padding: 8px 20px;
+  width: 100%;
+  border-radius: 5px;
+  background: var(--two-color);
+  color: white;
+  border: 1px solid var(--two-color);
+  transition: 0.4s;
+}
+
+.contact .map .contact-details .contact-form input[type="submit"]:hover {
+  background: none;
+  color: var(--two-color);
+}
+
+.contact .map .contact-details .web-frame iframe {
+  height: 500px;
+  width: 100%;
+}
+
+.contact .map .contact-details .contact-ul {
+  list-style: none;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  padding: 0px 30px;
+}
+
+.contact .map .contact-details .contact-ul li {
+  margin-bottom: 35px;
+}
+
+.contact .map .contact-details .contact-ul li h4 {
+  font-size: 17px;
+  margin-bottom: 10px;
+  color: #25d366;
+}
+
+.contact .map .contact-details .contact-ul li:nth-child(2) h4 {
+  color: var(--one-color);
+}
+
+.contact .map .contact-details .contact-ul li:nth-child(3) h4 {
+  color: var(--six-color);
+}
+
+.contact .map .contact-details .contact-ul li:nth-child(4) h4 {
+  color: var(--seven-color);
+}
+
+.contact .map .contact-details .contact-ul li .link-cover {
+  display: flex;
+  align-items: center;
+}
+
+.contact .map .contact-details .contact-ul li .link-cover .link-icon {
+  margin-left: 15px;
+  border: 1px solid #25d366;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.4s;
+}
+
+.contact .map .contact-details .contact-ul li .link-cover .link-icon img {
+  width: 23px;
+  height: 23px;
+  filter: invert();
+}
+
+.contact .map .contact-details .contact-ul li .link-cover .icon-2 {
+  border-color: var(--one-color);
+}
+.contact .map .contact-details .contact-ul li .link-cover .icon-3 {
+  border-color: var(--six-color);
+  padding: 7px;
+}
+.contact .map .contact-details .contact-ul li .link-cover .icon-4 {
+  border-color: rgb(27, 27, 27);
+}
+
+.contact .map .contact-details .contact-ul li .link-cover .icon-1 .img-1 {
+  filter: invert(67%) sepia(29%) saturate(1098%) hue-rotate(89deg)
+    brightness(93%) contrast(93%);
+}
+.contact .map .contact-details .contact-ul li .link-cover .icon-2 .img-2 {
+  filter: invert(25%) sepia(100%) saturate(2635%) hue-rotate(207deg)
+    brightness(101%) contrast(103%);
+}
+.contact .map .contact-details .contact-ul li .link-cover .icon-3 .img-3 {
+  filter: invert(64%) sepia(64%) saturate(6650%) hue-rotate(329deg)
+    brightness(98%) contrast(84%);
+
+  width: 28px;
+  height: 28px;
+}
+.contact .map .contact-details .contact-ul li .link-cover .icon-4 .img-4 {
+  filter: invert(3%) sepia(13%) saturate(8%) hue-rotate(314deg) brightness(98%)
+    contrast(85%);
+}
+
+.contact .map .contact-details .contact-ul li .link-cover .link-path {
+  border: 1px solid #25d366;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  font-size: 13px;
+  background: #25d366;
+  transition: 0.4s;
+}
+
+.contact .map .contact-details .contact-ul li .link-cover .link-2 {
+  background: var(--one-color);
+  border-color: var(--one-color);
+}
+.contact .map .contact-details .contact-ul li .link-cover .link-3 {
+  background: var(--six-color);
+  border-color: var(--six-color);
+}
+.contact .map .contact-details .contact-ul li .link-cover .link-4 {
+  background: rgb(27, 27, 27);
+  border-color: rgb(27, 27, 27);
+}
+
+.contact .map .contact-details .contact-ul li .link-cover .link-path a {
+  width: 100%;
+  padding: 10px 20px;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.contact .map .contact-details .contact-ul li .link-cover:hover > .icon-1 {
+  background: #25d366;
+}
+
+.contact .map .contact-details .contact-ul li .link-cover:hover > .icon-2 {
+  background: var(--one-color);
+}
+
+.contact .map .contact-details .contact-ul li .link-cover:hover > .icon-3 {
+  background: var(--six-color);
+}
+.contact .map .contact-details .contact-ul li .link-cover:hover > .icon-4 {
+  background: rgb(27, 27, 27);
+}
+
+.contact
+  .map
+  .contact-details
+  .contact-ul
+  li
+  .link-cover:hover
+  > .link-icon
+  img {
+  filter: invert(100%);
+}
+
+.contact .map .contact-details .contact-ul li .link-cover:hover > .link-path {
+  background: none;
+}
+.contact .map .contact-details .contact-ul li .link-cover:hover > .link-1 a {
+  color: #25d366;
+}
+.contact .map .contact-details .contact-ul li .link-cover:hover > .link-2 a {
+  color: var(--one-color);
+}
+.contact .map .contact-details .contact-ul li .link-cover:hover > .link-3 a {
+  color: var(--six-color);
+}
+.contact .map .contact-details .contact-ul li .link-cover:hover > .link-4 a {
+  color: rgb(27, 27, 27);
+}
+
+@media (max-width: 991px) {
+  .contact .map .contact-details .contact-form,
+  .contact .map .contact-details .contact-ul {
+    padding: 0;
+  }
+
+  .contact .map .contact-details .web-frame {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact {
+    padding: 40px 0px 0px 0px;
+  }
+
+  .contact .float-box {
+    display: none;
+  }
+
+  .contact .row .colom:first-child {
+    order: 2;
+  }
+
+  .contact .map .contact-details {
+    padding: 40px 0px;
+  }
+
+  .contact .contact-head .head-line h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact .map .contact-details {
+    padding: 30px 0px;
+  }
+
+  .contact .map .contact-details .contact-ul li {
+    margin-bottom: 25px;
+  }
+}
+
+/* contact end */

@@ -3,6 +3,17 @@ body {
   margin: 0;
 }
 
+:root {
+  --one-color: rgb(0, 110, 255);
+  --two-color: orange;
+  --three-color: rgb(218, 233, 255);
+  --four-color: rgb(255, 242, 219);
+  --five-color: #fbe6e6;
+  --six-color: #e95557;
+  --seven-color: rgb(27, 27, 27);
+  --eight-color: green;
+}
+
 .all-service {
   padding: 100px 0px;
   width: 100%;

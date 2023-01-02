@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap");
+
 * {
   font-family: "Cairo", sans-serif;
 }
@@ -76,9 +78,11 @@ body {
 .nav-bar .nav-content .logo-link {
   text-decoration: none;
   color: black;
-  font-size: 30px;
+  font-size: 26px;
   /* font-weight: 900; */
   user-select: none;
+  font-weight: 700;
+  letter-spacing: 0.08cm;
 }
 
 .nav-bar .nav-content ul:not(.down-list) {
@@ -561,16 +565,6 @@ body {
   margin-left: 15px;
 }
 
-@media (max-width: 991px) {
-  .nav-bar .nav-content .page-links {
-    display: none;
-  }
-  .nav-bar .nav-content .side-icon {
-    display: block;
-    padding-right: 10px;
-  }
-}
-
 @media (max-width: 1200px) {
   .nav-bar .nav-content .page-links ul li {
     margin: 0px 15px;
@@ -589,15 +583,28 @@ body {
   }
 }
 
+@media (max-width: 991px) {
+  .nav-bar .nav-content .page-links {
+    display: none;
+  }
+  .nav-bar .nav-content .side-icon {
+    display: block;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-bar .nav-content .nav-contact {
+    display: none;
+  }
+}
+
 @media (max-width: 575px) {
   .nav-bar .nav-content {
     padding: 8px 20px;
   }
-  .nav-bar .nav-content .nav-contact {
-    display: none;
-  }
 
   .nav-bar .nav-content .logo-link {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
