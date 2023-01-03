@@ -51,10 +51,18 @@ document.addEventListener('click', (e) => {
 
 
 // open slide down in sidenav
-let btn = document.querySelector('#btn-click');
-let slide = document.querySelector('.slide-body');
+let btn_service = document.querySelector('#btn-click-service');
+let btn_host = document.querySelector('#btn-click-host');
+let slide_service = document.querySelector('#slide-body-service');
+let slide_host = document.querySelector('#slide-body-host');
 
 const openSlide = () => {
-    btn.classList.toggle('active');
-    slide.classList.toggle('active-body')
+    if (event.target.id == "btn-click-service") {
+        btn_service.classList.toggle('active');
+        slide_service.classList.toggle('active-body')
+    }
+    else if (event.target.id == "btn-click-host") {
+        btn_host.classList.toggle('active');
+        slide_host.classList.toggle('active-body')
+    }
 }

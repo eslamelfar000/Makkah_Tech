@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="">
+    <link rel="stylesheet" href="./liberaries/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./liberaries/fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/cursor.css">
+    <link rel="stylesheet" href="./css/secone-header.css">
+    <link rel="stylesheet" href="./css/hosting.css">
+    <link rel="icon" href="./pics/ava.png">
+    <title>استضافة المواقع | مكه للتقنية - لخدمات تصميم وبرمجة المواقع وتطبيقات الهاتف</title>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <div class="nav-bar custom" id="nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="right-side">
+                    <div class="logo-img">
+                        <a href="home.html" class="logo-link">
+                            <!-- <img src="./pics/" class="logo" alt=""> -->
+                            مكه للتقنية
+                        </a>
+                    </div>
+
+                    <div class="page-links">
+                        <ul>
+                            <li class="li-link">
+                                <a href="about.html" class="link">عن الشركة</a>
+                            </li>
+                            <li class="li-link">
+                                <a href="services.html" class="link">الخدمات <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="down-list">
+                                    <img src="./pics/arrow.png" alt="">
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">تصميم المواقع الالكترونية</a>
+                                    </li>
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">أرشفة المواقع الالكترونية</a>
+                                    </li>
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">تصميم وبرمجة تطبيقات الجوال</a>
+                                    </li>
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">تصميم المتاجر الالتكرونية</a>
+                                    </li>
+                                    <li class="down-li">
+                                        <a href="#" class="down-link">استضافة المواقع وتطبيقات الجوال</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li-link">
+                                <a href="our_projects.html" class="link">اعمالنا</a>
+                            </li>
+                            <!-- <li class="li-link">
+                                    <a href="#" class="link">المدونة</a>
+                                </li> -->
+                            <li class="li-link">
+                                <a href="contact.html" class="link">تواصل معنا</a>
+                            </li>
+
+                            <li class="li-link">
+                                <a class="link">خدمات الاستضافة <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="down-list">
+                                    <img src="./pics/arrow.png" alt="">
+                                    <li class="down-li">
+                                        <a href="hosting.html" class="down-link">استضافة المواقع</a>
+                                    </li>
+                                    <li class="down-li">
+                                        <a href="#" class="down-link"> خدمات البريد الالكتروني</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="left-side">
+                    <div class="nav-contact">
+                        <ul>
+                            <li>
+                                <a href="#" class="contact-link">our@makkahtech.com
+                                    <i class="fa-regular fa-envelope"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="contact-link">+09785458446453
+                                    <i class="fa-brands fa-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="side-icon">
+                        <div class="box" id="side-box" onclick="openSide()">
+                            <div class="all first-row">
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                            </div>
+                            <div class="all sec-row">
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                            </div>
+                            <div class="all last-row">
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                                <i class="fa-solid fa-stop"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="overlay" id="overlay">
+            <div class="side-nav" id="side">
+                <div class="side-content">
+                    <div class="close-btn">
+                        <img src="./pics/close.png" onclick="closeSide()" alt="" />
+                    </div>
+
+                    <div class="logo-img">
+                        <a href="home.html" class="logo-link">
+                            <!-- <img src="./pics/" class="logo" alt=""> -->
+                            مكه للتقنية
+                        </a>
+                    </div>
+
+                    <div class="side-social">
+                        <ul>
+                            <li>
+                                <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="side-nav-links">
+                        <ul>
+                            <li class="side-li">
+                                <a href="about.html" class="side-link">عن الشركة</a>
+                            </li>
+                            <li class="side-li">
+                                <div class="down-btn">
+                                    <!-- <a href="#" class="side-link">الخدمات</a> -->
+                                    <button id="btn-click-service" onclick="openSlide()"><span>الخدمات</span> <i
+                                            class="fa-solid fa-angle-down"></i></button>
+
+                                    <div class="slide-body" id="slide-body-service">
+                                        <div class="slide-body-info">
+                                            <ul class="down-list">
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">تصميم المواقع الالكترونية</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">أرشفة المواقع الالكترونية</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">تصميم وبرمجة تطبيقات الجوال</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">تصميم المتاجر الالتكرونية</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">استضافة المواقع وتطبيقات الجوال</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="services.html" class="down-link">رؤية جميع الخدمات</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="side-li">
+                                <a href="our_projects.html" class="side-link">اعمالنا</a>
+                            </li>
+                            <!-- <li class="side-li">
+                                    <a href="#" class="side-link">المدونة</a>
+                                </li> -->
+                            <li class="side-li">
+                                <a href="contact.html" class="side-link">تواصل معنا</a>
+                            </li>
+
+
+                            <li class="side-li">
+                                <div class="down-btn">
+                                    <!-- <a href="#" class="side-link">الخدمات</a> -->
+                                    <button id="btn-click-host" onclick="openSlide()"><span>خدمات الاستضافة</span> <i
+                                            class="fa-solid fa-angle-down"></i></button>
+
+                                    <div class="slide-body" id="slide-body-host">
+                                        <div class="slide-body-info">
+                                            <ul class="down-list">
+                                                <li class="down-li">
+                                                    <a href="hosting.html" class="down-link">استضافة المواقع</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">خدمات البريد الالكتروني</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <div class="contact-li">
+                                <li>
+                                    <a href="#" class="whatsapp btn"><i class="fa-brands fa-whatsapp"></i> تواصل معنا
+                                        عبر
+                                        الواتساب</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="whatsapp btn"><i class="fa-regular fa-envelope"></i> تواصل مباشر
+                                        عبر
+                                        الايميل</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar end -->
+
+    <!-- descriptiion section start  -->
+    <div class="description">
+        <div class="desc-cover">
+            <div class="container">
+                <div class="row">
+                    <div class="colom col-12 col-lg-6">
+                        <div class="desc-info">
+                            <h4>استضافة مواقع وحجز دومينات</h4>
+
+                            <p>قد لا يكون لديك الميزانية لاستئجار خادم مخصص لموقعك ، أو تحتاج فقط إلى مساحة مُدارة
+                                بالكامل
+                                وجاهزة للاستخدام لاستضافة موقعك على الإنترنت. هذا هو السبب في أننا في شركة استضافة
+                                بالسعودية
+                                خصصنا حزم الاستضافة المشتركة لاستضافة موقعك بالكامل. عبر الإنترنت كما لو كنت على خادمك
+                            </p>
+
+                            <p>الخاص بفضل تقنيات الحماية والعزل التي نستخدمها. ملتقى للبرمجيات تقدم أفضل استضافة بريد
+                                إلكتروني للشركات مع أحدث عوامل تصفية البريد الإلكتروني والحماية من البريد العشوائي ،
+                                يمكن
+                                فتح البريد الإلكتروني بسهولة عبر بريد الويب أو Outlook أو تطبيقات الأجهزة المحمولة. كما
+                                تساعد استضافة WordPress السريعة على تسريع الموقع وزيادة أداء الاستضافة. </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="desc-img">
+                            <img src="./pics/hosting.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- descriptiion section end  -->
+
+
+
+
+    <!-- pricing list section start -->
+    <div class="pricing-list">
+        <div class="container">
+            <div class="pricing-head">
+                <h2>قائمة الاسعار</h2>
+                <span>اختر الخطة المناسبة لك</span>
+                <label></label>
+            </div>
+
+            <div class="row">
+                <div class="colom col-11 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="price-card">
+                        <div class="card-info">
+                            <div class="card-img">
+                                <img src="./pics/single star.png" alt="">
+                            </div>
+
+                            <div class="card-desc">
+                                <div class="card-head">
+                                    <h4>Medium</h4>
+
+                                    <p>احصل على البُنية التحتية التقنية المُتكاملة بحسب إحتياجاتك ولكل المعايير</p>
+
+                                    <hr>
+                                </div>
+
+                                <ul class="card-list">
+                                    <li>
+                                        <p>Windows Or Linux</p>
+                                    </li>
+                                    <li class="back">
+                                        <p>مواصفات على حسب الطلب</p>
+                                    </li>
+                                    <li>
+                                        <p>1 vCPU -> 4 vCPU</p>
+                                    </li>
+                                    <li class="back">
+                                        <p>ذاكرة تبدا من 2 وحتى 32 جيجا</p>
+                                    </li>
+                                    <li>
+                                        <p>مساحات تخزين من 20 وحتى 160 جيجا</p>
+                                    </li>
+                                    <li class="back">
+                                        <p>600 جيجا لنقل البيانات شهريا تصل حتى 20 تيرا</p>
+                                    </li>
+                                    <li>
+                                        <p>جدار حماية ومضاد فيروسات</p>
+                                    </li>
+                                    <li class="back">
+                                        <p>لوحة تحكم : Cpanel</p>
+                                    </li>
+                                    <li>
+                                        <p>نسخ احتياطية خارجية</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sell">
+                            <h2 class="price">
+                                65.67 <span>$</span>
+                            </h2>
+                            <span class="month">per month</span>
+                        </div>
+
+                        <a href="#">اطلب الان</a>
+                    </div>
+                </div>
+
+
+
+                <div class="active colom col-11 col-sm-12 col-lg-4">
+                    <div class="price-card">
+                        <div class="card-info">
+                            <div class="card-img">
+                                <img src="./pics/review.png" alt="">
+                            </div>
+
+                            <div class="card-desc">
+                                <div class="card-head">
+                                    <h4>Best Seller</h4>
+
+                                    <p>احصل على البُنية التحتية التقنية المُتكاملة بحسب إحتياجاتك ولكل المعايير</p>
+
+                                    <hr>
+                                </div>
+
+                                <ul class="card-list">
+                                    <li>
+                                        <p>Windows Or Linux</p>
+                                    </li>
+                                    <li class="back">
+                                        <p>مواصفات على حسب الطلب</p>
+                                    </li>
+                                    <li>
+                                        <p>1 vCPU -> 4 vCPU</p>
+                                    </li>
+                                    <li class="back">
+                                        <p>ذاكرة تبدا من 2 وحتى 32 جيجا</p>
+                                    </li>
+                                    <li>
+                                        <p>مساحات تخزين من 20 وحتى 160 جيجا</p>
+                                    </li>
+                                    <li class="back">
+                                        <p>600 جيجا لنقل البيانات شهريا تصل حتى 20 تيرا</p>
+                                    </li>
+                                    <li>
+                                        <p>جدار حماية ومضاد فيروسات</p>
+                                    </li>
+                                    <li class="back">
+                                        <p>لوحة تحكم : Cpanel</p>
+                                    </li>
+                                    <li>
+                                        <p>نسخ احتياطية خارجية</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sell">
+                            <h2 class="price">
+                                65.67 <span>$</span>
+                            </h2>
+                            <span class="month">per month</span>
+                        </div>
+
+                        <a href="#">اطلب الان</a>
+                    </div>
+                </div>
+
+
+
+                <div class="colom col-11 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="price-card">
+                        <div class="card-info">
+                            <div class="card-img">
+                                <img src="./pics/half-tiny-star.png" alt="">
+                            </div>
+
+                            <div class="card-desc">
+                                <div class="card-head">
+                                    <h4>Basic</h4>
+
+                                    <p>احصل على البُنية التحتية التقنية المُتكاملة بحسب إحتياجاتك ولكل المعايير</p>
+
+                                    <hr>
+                                </div>
+
+                                <ul class="card-list">
+                                    <li>
+                                        <p>Windows Or Linux</p>
+                                    </li>
+                                    <li class="back">
+                                        <p>مواصفات على حسب الطلب</p>
+                                    </li>
+                                    <li>
+                                        <p>1 vCPU -> 4 vCPU</p>
+                                    </li>
+                                    <li class="back">
+                                        <p>ذاكرة تبدا من 2 وحتى 32 جيجا</p>
+                                    </li>
+                                    <li>
+                                        <p>مساحات تخزين من 20 وحتى 160 جيجا</p>
+                                    </li>
+                                    <li class="back">
+                                        <p>600 جيجا لنقل البيانات شهريا تصل حتى 20 تيرا</p>
+                                    </li>
+                                    <li>
+                                        <p>جدار حماية ومضاد فيروسات</p>
+                                    </li>
+                                    <li class="back">
+                                        <p>لوحة تحكم : Cpanel</p>
+                                    </li>
+                                    <li>
+                                        <p>نسخ احتياطية خارجية</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sell">
+                            <h2 class="price">
+                                65.67 <span>$</span>
+                            </h2>
+                            <span class="month">per month</span>
+                        </div>
+
+                        <a href="#">اطلب الان</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pricing list section start -->
+
+
+
+
+    <!-- footer start -->
+    <footer class="my-footer">
+        <!-- <img class="background" src="./pics/web-back10.jpg" alt=""> -->
+        <div class="footer-cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="footer-content">
+                            <h1>نحن نحب أن نسمع منك <img src="./pics/happiness.png" alt=""></h1>
+
+                            <div class="sec-row row">
+                                <div class="f-col col-12 col-sm-6">
+                                    <div class="right-col">
+                                        <h3>نتشرف بزيارتكم</h3>
+                                        <a href="#">السويدي الغربي، الرياض- الدور الأول - مكتب 2 - عمارة صيدلية
+                                            الدواء</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="left-col">
+                                        <h3>تواصل معنا</h3>
+                                        <ul class="footer-contact-ul">
+                                            <li>
+                                                <a href="#" class="footer-ul-link"><i class="fa-brands fa-whatsapp"></i>
+                                                    78668349833423+</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="footer-ul-link"><i class="fa-brands fa-whatsapp"></i>
+                                                    201085445875+</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="footer-ul-link"><i
+                                                        class="fa-brands fa-instagram"></i>
+                                                    our@makkahtec.com</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="footer-content-2">
+                            <h3 class="head-1">روابط سريعة</h3>
+
+                            <ul class="speed-ul">
+                                <li>
+                                    <a href="#">تصميم المواقع الالكترونية</a>
+                                </li>
+                                <li>
+                                    <a href="#">تصميم وبرمجة تطبيقات الجوال</a>
+                                </li>
+                                <li>
+                                    <a href="#">تصميم المتاجر الالكترونية</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="footer-content-2">
+                            <h3 class="head-2">تابعنا علي شبكات التواصل</h3>
+                            <ul class="social-ul">
+                                <li>
+                                    <a href="#"><img src="./pics/instagram.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./pics/twitter.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./pics/facebook.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="bottom-sec">
+        <div class="container">
+            <div class="low">
+                <button onclick="scrollUp()"><i class="fa-solid fa-arrow-up"></i></button>
+                <p>©2022, مكه تك لتصميم وبرمجة المواقع وتطبيقات الجوال جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </section>
+    <!-- footer end -->
+
+
+
+
+    <!-- custom cursor -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
+        integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/cursor.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/scrollToUp.js"></script>
+
+</body>
+
+</html>

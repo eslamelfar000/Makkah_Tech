@@ -1,0 +1,315 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --one-color: rgb(0, 110, 255);
+  --two-color: orange;
+  --three-color: rgb(218, 233, 255);
+  --four-color: rgb(255, 242, 219);
+  --five-color: #fbe6e6;
+  --six-color: #e95557;
+  --seven-color: rgb(27, 27, 27);
+  --eight-color: #2dd064;
+}
+
+.custom {
+  background: none;
+}
+
+.description {
+  width: 100%;
+  overflow: hidden;
+  direction: rtl !important;
+  background: url(../pics/5566879.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.description .desc-cover {
+  padding: 150px 0px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 80%,
+    rgb(255, 255, 255) 99%
+  );
+}
+
+.description .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description .row .desc-img {
+  width: 100%;
+  text-align: center;
+}
+
+.description .row .desc-img img {
+  width: 100%;
+  animation: animate 1.5s infinite alternate;
+}
+
+@keyframes animate {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+.description .row .desc-info {
+  padding-left: 20px;
+  width: 100%;
+}
+
+.description .row .desc-info h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.description .row .desc-info p {
+  font-size: 16px;
+  opacity: 0.8;
+  line-height: 0.8cm;
+}
+
+/* pricing list start */
+
+.pricing-list {
+  padding: 150px 0px;
+  padding-top: 50px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  direction: rtl !important;
+}
+
+.pricing-list .pricing-head {
+  margin-bottom: 100px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-list .pricing-head h2 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.09cm;
+  margin-bottom: 5px;
+}
+
+.pricing-list .pricing-head span {
+  font-size: 15px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.pricing-list .pricing-head label {
+  width: 100px;
+  height: 3px;
+  border-bottom: 3px solid var(--two-color);
+}
+
+.pricing-list .row {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-list .row .colom {
+  padding: 0;
+}
+
+.pricing-list .row .price-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgb(246, 246, 246);
+  height: 100%;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.pricing-list .row .price-card .card-info {
+  padding: 40px 0px 0px 0px;
+  width: 100%;
+}
+
+.pricing-list .row .active {
+  box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.198);
+  z-index: 1;
+  margin-top: -50px;
+  margin-bottom: -50px;
+  background: white;
+  border-radius: 20px;
+}
+
+.pricing-list .row .colom:nth-child(1) .price-card {
+  border-radius: 0px 20px 20px 0px;
+}
+.pricing-list .row .colom:nth-child(2) .price-card {
+  border-radius: 20px;
+}
+.pricing-list .row .colom:nth-child(3) .price-card {
+  border-radius: 20px 0px 0px 20px;
+}
+
+.pricing-list .row .price-card .card-img {
+  width: 100%;
+}
+
+.pricing-list .row .colom:nth-child(1) .price-card .card-img img {
+  width: 50px;
+  height: 50px;
+  filter: invert(67%) sepia(29%) saturate(1098%) hue-rotate(89deg)
+    brightness(93%) contrast(93%);
+
+  margin-bottom: 40px;
+}
+.pricing-list .row .colom:nth-child(2) .price-card .card-img img {
+  width: 150px;
+  height: 150px;
+  filter: invert(64%) sepia(64%) saturate(6650%) hue-rotate(329deg)
+    brightness(98%) contrast(84%);
+}
+.pricing-list .row .colom:nth-child(3) .price-card .card-img img {
+  width: 50px;
+  height: 50px;
+  filter: invert(25%) sepia(100%) saturate(2635%) hue-rotate(207deg)
+    brightness(101%) contrast(103%);
+  margin-bottom: 40px;
+}
+
+.pricing-list .row .price-card .card-desc .card-head {
+  padding: 0px 20px;
+}
+
+.pricing-list .row .price-card .card-desc h4 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-family: arial;
+  opacity: 0.9;
+}
+
+.pricing-list .row .price-card .card-desc p {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.pricing-list .row .price-card .sell {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.pricing-list .row .price-card h2 {
+  font-size: 50px;
+  color: var(--eight-color);
+  font-family: arial;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.pricing-list .row .colom:nth-child(2) .price-card h2 {
+  color: var(--six-color);
+}
+
+.pricing-list .row .colom:nth-child(3) .price-card h2 {
+  color: var(--one-color);
+}
+
+.pricing-list .row .price-card .sell h2 span {
+  font-size: 35px;
+  margin-right: 3px;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.pricing-list .row .price-card .sell span {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.pricing-list .row .price-card .card-desc hr {
+  opacity: 0.1;
+  display: flex;
+  padding: 0px 20px;
+}
+
+.pricing-list .row .price-card .card-desc ul {
+  list-style: none;
+  padding: 0px 0px 0px 0px;
+  margin: 0;
+}
+
+.pricing-list .row .price-card .card-desc ul li {
+  padding: 15px 5px;
+}
+
+.pricing-list .row .price-card .card-desc ul li p {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+.pricing-list .row .price-card .card-desc ul .back {
+  background: rgb(235, 235, 235);
+}
+
+.pricing-list .row .price-card a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  width: 100%;
+  border-radius: 0px 0px 10px 0px;
+  padding: 15px 20px;
+  background: var(--eight-color);
+  z-index: 10;
+  transition: 0.4s;
+}
+
+.pricing-list .row .colom:nth-child(2) .price-card a {
+  background: var(--six-color);
+  padding: 20px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.pricing-list .row .colom:nth-child(3) .price-card a {
+  background: var(--one-color);
+  border-radius: 0px 0px 0px 10px;
+}
+
+.pricing-list .row .price-card a:hover {
+  background: var(--seven-color) !important;
+}
+
+@media (max-width: 991px) {
+  .pricing-list .row .active {
+    margin: 0px;
+    order: 3;
+  }
+
+  .pricing-list .row .colom {
+    margin-bottom: 30px;
+  }
+
+  .pricing-list .pricing-head {
+    margin-bottom: 40px;
+  }
+
+  .pricing-list {
+    padding-bottom: 50px;
+  }
+}
+
+/* pricing list end */

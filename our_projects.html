@@ -19,7 +19,7 @@
 
 <body>
     <!-- navbar start -->
-    <div class="nav-bar" id="nav">
+    <div class="nav-bar custom" id="nav">
         <div class="container">
             <div class="nav-content">
                 <div class="right-side">
@@ -64,6 +64,19 @@
                                 </li> -->
                             <li class="li-link">
                                 <a href="contact.html" class="link">تواصل معنا</a>
+                            </li>
+
+                            <li class="li-link">
+                                <a class="link">خدمات الاستضافة <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="down-list">
+                                    <img src="./pics/arrow.png" alt="">
+                                    <li class="down-li">
+                                        <a href="hosting.html" class="down-link">استضافة المواقع</a>
+                                    </li>
+                                    <li class="down-li">
+                                        <a href="#" class="down-link"> خدمات البريد الالكتروني</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -144,10 +157,10 @@
                             <li class="side-li">
                                 <div class="down-btn">
                                     <!-- <a href="#" class="side-link">الخدمات</a> -->
-                                    <button id="btn-click" onclick="openSlide()"><span>الخدمات</span> <i
+                                    <button id="btn-click-service" onclick="openSlide()"><span>الخدمات</span> <i
                                             class="fa-solid fa-angle-down"></i></button>
 
-                                    <div class="slide-body" id="slide-body">
+                                    <div class="slide-body" id="slide-body-service">
                                         <div class="slide-body-info">
                                             <ul class="down-list">
                                                 <li class="down-li">
@@ -182,6 +195,29 @@
                             <li class="side-li">
                                 <a href="contact.html" class="side-link">تواصل معنا</a>
                             </li>
+
+
+                            <li class="side-li">
+                                <div class="down-btn">
+                                    <!-- <a href="#" class="side-link">الخدمات</a> -->
+                                    <button id="btn-click-host" onclick="openSlide()"><span>خدمات الاستضافة</span> <i
+                                            class="fa-solid fa-angle-down"></i></button>
+
+                                    <div class="slide-body" id="slide-body-host">
+                                        <div class="slide-body-info">
+                                            <ul class="down-list">
+                                                <li class="down-li">
+                                                    <a href="hosting.html" class="down-link">استضافة المواقع</a>
+                                                </li>
+                                                <li class="down-li">
+                                                    <a href="#" class="down-link">خدمات البريد الالكتروني</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
                             <div class="contact-li">
                                 <li>
                                     <a href="#" class="whatsapp btn"><i class="fa-brands fa-whatsapp"></i> تواصل معنا
@@ -201,7 +237,6 @@
         </div>
     </div>
     <!-- navbar end -->
-
 
 
 
