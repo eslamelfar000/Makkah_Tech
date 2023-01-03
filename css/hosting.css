@@ -201,8 +201,8 @@ body {
   font-size: 35px;
   margin-bottom: 20px;
   font-family: arial;
-  opacity: 0.9;
-  color: white;
+  /* opacity: 0.7; */
+  color: var(---color);
   font-weight: 700;
 }
 
@@ -283,7 +283,7 @@ body {
 
 .pricing-list .row .price-card .card-desc ul li p {
   font-size: 14px;
-  opacity: 0.6;
+  opacity: 0.8;
   margin-bottom: 0;
 }
 
