@@ -148,8 +148,12 @@ body {
   z-index: 1;
   margin-top: -50px;
   margin-bottom: -50px;
-  background: white;
+  background: rgb(243, 243, 243);
   border-radius: 20px;
+}
+
+.pricing-list .row .active .price-card {
+  background: white;
 }
 
 .pricing-list .row .colom:nth-child(1) .price-card {
@@ -257,7 +261,7 @@ body {
 }
 
 .pricing-list .row .price-card .card-desc ul li p {
-  font-size: 12px;
+  font-size: 14px;
   opacity: 0.6;
   margin-bottom: 0;
 }
