@@ -350,7 +350,12 @@ body {
 
 @media (max-width: 575px) {
   .pricing-list .row .price-card .card-head::after {
-    border-left: 00px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+  }
+
+  .pricing-list .row .colom:nth-child(1) .price-card .card-head::after {
+    border-left: 0px solid transparent;
     border-right: 0px solid transparent;
   }
 
