@@ -112,7 +112,7 @@ body {
   visibility: hidden;
   transition: 0.5s;
   right: 0;
-  width: 300px;
+  width: 350px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.17);
 }
 
@@ -302,7 +302,7 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  width: 320px;
+  width: 350px;
   height: 100%;
   background: dodgerblue;
   z-index: 1001;

@@ -1,0 +1,80 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --one-color: rgb(0, 110, 255);
+  --two-color: orange;
+  --three-color: rgb(218, 233, 255);
+  --four-color: rgb(255, 242, 219);
+  --five-color: #fbe6e6;
+  --six-color: #e95557;
+  --seven-color: rgb(27, 27, 27);
+  --eight-color: #2dd064;
+}
+
+.custom {
+  background: none;
+}
+
+.description {
+  width: 100%;
+  overflow: hidden;
+  direction: rtl !important;
+  background: url(../pics/5566879.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.description .desc-cover {
+  padding: 150px 0px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 80%,
+    rgb(255, 255, 255) 99%
+  );
+}
+
+.description .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description .row .desc-img {
+  width: 100%;
+  text-align: center;
+}
+
+.description .row .desc-img img {
+  width: 100%;
+  animation: animate 1.5s infinite alternate;
+}
+
+@keyframes animate {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+.description .row .desc-info {
+  padding-left: 20px;
+  width: 100%;
+}
+
+.description .row .desc-info h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.description .row .desc-info p {
+  font-size: 16px;
+  opacity: 0.8;
+  line-height: 0.8cm;
+}
