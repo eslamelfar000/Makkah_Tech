@@ -5,11 +5,11 @@ body {
 
 :root {
   --one-color: rgb(0, 110, 255);
-  --two-color: orange;
+  --two-color: rgb(222, 145, 0);
   --three-color: rgb(218, 233, 255);
   --four-color: rgb(255, 242, 219);
   --five-color: #fbe6e6;
-  --six-color: #e95557;
+  --six-color: #d94042;
   --seven-color: rgb(27, 27, 27);
   --eight-color: #2dd064;
 }
