@@ -126,6 +126,14 @@ body {
   text-align: center;
 }
 
+.pricing-list .row .colom:nth-child(2) .price-card .card-head {
+  background: linear-gradient(to top, var(--six-color), var(--two-color));
+}
+
+.pricing-list .row .colom:nth-child(3) .price-card .card-head {
+  background: linear-gradient(to top, rgb(128, 0, 255), #00ffdb);
+}
+
 .pricing-list .row .price-card .card-head .title {
   display: flex;
   align-items: center;
@@ -147,6 +155,14 @@ body {
   border-left: 159px solid transparent;
   border-right: 148px solid transparent;
   border-radius: 5px;
+}
+
+.pricing-list .row .colom:nth-child(2) .price-card .card-head::after {
+  border-top: 40px solid var(--six-color);
+}
+
+.pricing-list .row .colom:nth-child(3) .price-card .card-head::after {
+  border-top: 40px solid rgb(128, 0, 255);
 }
 
 .pricing-list .row .price-card .card-head img {
@@ -183,6 +199,18 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.pricing-list .row .colom:nth-child(2) .price-card .sell .price {
+  background: linear-gradient(to top, var(--six-color), var(--two-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pricing-list .row .colom:nth-child(3) .price-card .sell .price {
+  background: linear-gradient(to top, rgb(128, 0, 255), #00ffdb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .pricing-list .row .price-card .sell span {
   font-size: 17px;
   padding-left: 15px;
@@ -192,13 +220,22 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.pricing-list .row .colom:nth-child(2) .price-card .sell span {
+  background: linear-gradient(to top, var(--six-color), var(--two-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pricing-list .row .colom:nth-child(3) .price-card .sell span {
+  background: linear-gradient(to top, rgb(128, 0, 255), #00ffdb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .pricing-list .row .price-card .sell .price span {
   font-size: 20px;
   opacity: 1;
   padding-left: 0;
-  background: -webkit-linear-gradient(var(--eight-color), var(--one-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .pricing-list .row .price-card .card-down {
@@ -246,6 +283,14 @@ body {
   z-index: -1;
 }
 
+.pricing-list .row .colom:nth-child(2) .price-card ul li::before {
+  background: linear-gradient(25deg, var(--six-color) 40%, var(--two-color));
+}
+
+.pricing-list .row .colom:nth-child(3) .price-card ul li::before {
+  background: linear-gradient(25deg, rgb(128, 0, 255), #00ffdb);
+}
+
 .pricing-list .row .price-card ul li h5 {
   font-size: 15px;
   margin-bottom: 0;
@@ -274,18 +319,41 @@ body {
 
 .pricing-list .row .price-card .order a {
   text-decoration: none;
+  position: relative;
   color: white;
   padding: 10px 50px;
   border: 2px solid white;
   border-radius: 50px;
   transition: 0.4s;
   font-size: 17px;
+  z-index: 10;
   background: linear-gradient(45deg, var(--eight-color), var(--one-color));
 }
 
-.pricing-list .row .price-card .order a:hover {
-  background: var(--seven-color);
-  color: white;
+.pricing-list .row .colom:nth-child(2) .price-card .order a {
+  background: linear-gradient(35deg, var(--six-color) 30%, var(--two-color));
+}
+
+.pricing-list .row .colom:nth-child(3) .price-card .order a {
+  background: linear-gradient(35deg, rgb(128, 0, 255), #00ffdb);
+}
+
+.pricing-list .row .price-card .order a::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background: black;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  opacity: 0;
+  transition: 0.4s;
+  z-index: -1;
+}
+
+.pricing-list .row .price-card .order a:hover:before {
+  opacity: 1;
 }
 
 @media (max-width: 1399px) {
