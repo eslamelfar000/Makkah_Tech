@@ -16,6 +16,10 @@ body {
 
 /* pricing list start */
 
+.description .row .desc-img img {
+  /* background: red; */
+}
+
 .pricing-list {
   padding: 150px 0px;
   padding-top: 50px;
