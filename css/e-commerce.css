@@ -112,11 +112,15 @@ body {
   border-radius: 10px;
   padding-top: 40px;
   position: relative;
+  transition: 0.4s;
 }
 
-/* .pricing-list .row .colom:nth-child(1) .price-card {
-    background: linear-gradient(45deg, var(--two-color), var(--one-color));
-  } */
+.pricing-list .row .price-card:hover {
+  transform: translateY(-10px);
+}
+.pricing-list .row .price-card:hover > .card-head {
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.305);
+}
 
 .pricing-list .row .price-card .card-head {
   position: relative;
@@ -124,6 +128,7 @@ body {
   border-radius: 10px 10px 5px 5px;
   background: linear-gradient(to top, var(--one-color), var(--eight-color));
   text-align: center;
+  transition: 0.4s;
 }
 
 .pricing-list .row .colom:nth-child(2) .price-card .card-head {
@@ -257,6 +262,7 @@ body {
   background: url(../pics/ul.jpg);
   background-position: center center;
   background-size: cover;
+  transition: 0.4s;
 }
 
 .pricing-list .row .price-card ul li {
