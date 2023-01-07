@@ -156,6 +156,10 @@ body {
 }
 
 @media (max-width: 991px) {
+  .service-details {
+    padding: 60px 0px;
+  }
+
   .service-details .row .col-img .display {
     display: none;
   }
@@ -170,6 +174,9 @@ body {
 }
 
 @media (max-width: 575px) {
+  .service-details {
+    padding: 40px 0px;
+  }
   .service-details .row .details .title {
     font-size: 22px;
   }
