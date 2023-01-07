@@ -5,6 +5,7 @@
   --four-color: rgb(255, 242, 219);
   --five-color: #fbe6e6;
   --six-color: #e95557;
+  --seven-color: rgb(27, 27, 27);
 }
 
 html,
@@ -1153,6 +1154,7 @@ body {
 .contact .map .contact-details .contact-form {
   padding: 0px 30px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .contact .map .contact-details .contact-form .form-line {
@@ -1207,17 +1209,17 @@ body {
 
 .contact .map .contact-details .contact-form input[type="submit"] {
   padding: 8px 20px;
-  width: 100%;
+  width: 280px;
   border-radius: 5px;
-  background: var(--two-color);
+  background: var(--seven-color);
   color: white;
-  border: 1px solid var(--two-color);
+  border: 1px solid var(--seven-color);
   transition: 0.4s;
 }
 
 .contact .map .contact-details .contact-form input[type="submit"]:hover {
   background: none;
-  color: var(--two-color);
+  color: var(--seven-color);
 }
 
 .contact .map .contact-details .web-frame {
@@ -1255,7 +1257,7 @@ body {
 }
 
 .contact .map .contact-details .contact-ul li:nth-child(4) h4 {
-  color: var(--seven-color);
+  color: var(--two-color);
 }
 
 .contact .map .contact-details .contact-ul li .link-cover {
@@ -1285,7 +1287,7 @@ body {
   padding: 7px;
 }
 .contact .map .contact-details .contact-ul li .link-cover .icon-4 {
-  border-color: rgb(27, 27, 27);
+  border-color: var(--two-color);
 }
 
 .contact .map .contact-details .contact-ul li .link-cover .icon-1 .img-1 {
@@ -1304,8 +1306,8 @@ body {
   height: 28px;
 }
 .contact .map .contact-details .contact-ul li .link-cover .icon-4 .img-4 {
-  filter: invert(3%) sepia(13%) saturate(8%) hue-rotate(314deg) brightness(98%)
-    contrast(85%);
+  filter: invert(58%) sepia(23%) saturate(4030%) hue-rotate(345deg)
+    brightness(94%) contrast(98%);
 }
 
 .contact .map .contact-details .contact-ul li .link-cover .link-path {
@@ -1327,8 +1329,8 @@ body {
   border-color: var(--six-color);
 }
 .contact .map .contact-details .contact-ul li .link-cover .link-4 {
-  background: rgb(27, 27, 27);
-  border-color: rgb(27, 27, 27);
+  background: var(--two-color);
+  border-color: var(--two-color);
 }
 
 .contact .map .contact-details .contact-ul li .link-cover .link-path a {
@@ -1352,7 +1354,7 @@ body {
   background: var(--six-color);
 }
 .contact .map .contact-details .contact-ul li .link-cover:hover > .icon-4 {
-  background: rgb(27, 27, 27);
+  background: var(--two-color);
 }
 
 .contact
@@ -1379,7 +1381,7 @@ body {
   color: var(--six-color);
 }
 .contact .map .contact-details .contact-ul li .link-cover:hover > .link-4 a {
-  color: rgb(27, 27, 27);
+  color: var(--two-color);
 }
 
 @media (max-width: 991px) {
