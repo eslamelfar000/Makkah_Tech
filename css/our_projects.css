@@ -151,7 +151,7 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 10px 10px 0px 0px;
-  height: 250px;
+  height: auto;
   display: flex;
   transition: 0.4s;
 }
@@ -166,8 +166,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 250px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.123) 70%, rgb(0, 26, 61));
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.123) 40%, rgb(0, 26, 61));
 
   transition: background 0.4s ease-out;
   z-index: 1;
@@ -177,14 +177,14 @@ body {
 .project .row .project-info:hover > .project-link .card-img::before {
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.123) 70%,
+    rgba(0, 0, 0, 0.123) 40%,
     rgb(0, 26, 61)
   );
 }
 
 .project .row .project-info .card-img img {
   width: 100%;
-  height: 100%;
+  height: auto;
   transition: 0.4s;
 }
 
