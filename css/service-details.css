@@ -159,4 +159,26 @@ body {
   .service-details .row .col-img .display {
     display: none;
   }
+
+  .second-header .sec-cover::after {
+    display: none !important;
+  }
+
+  .service-details .float-box {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .service-details .row .details .title {
+    font-size: 22px;
+  }
+
+  .service-details .row .details .desc-list {
+    padding-right: 20px;
+  }
+
+  .service-details .row .details .desc-list li {
+    font-size: 14px;
+  }
 }
