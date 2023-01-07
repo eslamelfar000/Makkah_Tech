@@ -429,7 +429,7 @@ body {
 /* porject start */
 
 .project {
-  padding: 80px 0px;
+  padding: 60px 0px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -547,7 +547,7 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 10px 10px 0px 0px;
-  height: 250px;
+  height: auto;
   display: flex;
   transition: 0.4s;
 }
@@ -562,8 +562,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 250px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.123) 70%, rgb(0, 26, 61));
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.123) 40%, rgb(0, 26, 61));
 
   transition: background 0.4s ease-out;
   z-index: 1;
@@ -573,14 +573,14 @@ body {
 .project .row .project-info:hover > .project-link .card-img::before {
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.123) 70%,
+    rgba(0, 0, 0, 0.123) 40%,
     rgb(0, 26, 61)
   );
 }
 
 .project .row .project-info .card-img img {
   width: 100%;
-  height: 100%;
+  height: auto;
   transition: 0.4s;
 }
 
@@ -651,6 +651,7 @@ body {
   font-size: 17px;
   margin-top: 30px;
   transition: 0.4s;
+  text-decoration: none;
 }
 
 .project .more i {
@@ -757,6 +758,10 @@ body {
   width: 100%;
   overflow: hidden;
   direction: rtl !important;
+  background: url("../pics/ul2.jpg");
+  background-color: rgba(0, 0, 0, 0.159);
+  background-size: cover;
+  background-position: center center;
 }
 
 .clients .clients-head {
@@ -869,7 +874,7 @@ body {
 /* review start */
 
 .review {
-  padding: 100px 0px;
+  padding: 80px 0px;
   width: 100%;
   overflow: hidden;
   position: relative;

@@ -140,7 +140,7 @@ body {
 }
 
 .pricing-list .row .colom:nth-child(3) .price-card .card-head {
-  background: linear-gradient(to top, rgb(128, 0, 255), #00ffdb);
+  background: linear-gradient(to top, #b0f, rgb(0, 4, 255));
 }
 
 .pricing-list .row .price-card .card-head .title {
@@ -171,14 +171,14 @@ body {
 }
 
 .pricing-list .row .colom:nth-child(3) .price-card .card-head::after {
-  border-top: 40px solid rgb(128, 0, 255);
+  border-top: 40px solid #b0f;
 }
 
 .pricing-list .row .price-card .card-head img {
   width: 30px;
   height: 30px;
   filter: invert();
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .pricing-list .row .price-card .card-head h3 {
@@ -192,7 +192,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   background: white;
-  padding: 25px 10px;
+  padding: 25px 13px;
   border-radius: 50%;
   box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.208);
   text-align: center;
@@ -215,7 +215,7 @@ body {
 }
 
 .pricing-list .row .colom:nth-child(3) .price-card .sell .price {
-  background: linear-gradient(to top, rgb(128, 0, 255), #00ffdb);
+  background: linear-gradient(to top, #b0f, rgb(0, 4, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -236,7 +236,7 @@ body {
 }
 
 .pricing-list .row .colom:nth-child(3) .price-card .sell span {
-  background: linear-gradient(to top, rgb(128, 0, 255), #00ffdb);
+  background: linear-gradient(to top, #b0f, rgb(0, 4, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -279,6 +279,7 @@ body {
   z-index: 10;
   color: white;
   width: 90%;
+  direction: ltr;
 }
 
 .pricing-list .row .price-card ul li::before {
@@ -298,7 +299,7 @@ body {
 }
 
 .pricing-list .row .colom:nth-child(3) .price-card ul li::before {
-  background: linear-gradient(25deg, rgb(128, 0, 255), #00ffdb);
+  background: linear-gradient(25deg, #b0f, rgb(0, 4, 255));
 }
 
 .pricing-list .row .price-card ul li h5 {
@@ -308,7 +309,7 @@ body {
 
 .pricing-list .row .price-card ul li h5 i {
   font-size: 17px;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .pricing-list .row .price-card ul li span {
@@ -345,13 +346,13 @@ body {
 }
 
 .pricing-list .row .colom:nth-child(3) .price-card .order a {
-  background: linear-gradient(35deg, rgb(128, 0, 255), #00ffdb);
+  background: linear-gradient(35deg, #b0f, rgb(0, 4, 255));
 }
 
 .pricing-list .row .price-card .order a::before {
   position: absolute;
   content: "";
-  width: 100%;
+  width: 0;
   background: black;
   height: 100%;
   top: 0;
@@ -364,6 +365,7 @@ body {
 
 .pricing-list .row .price-card .order a:hover:before {
   opacity: 1;
+  width: 100%;
 }
 
 @media (max-width: 1399px) {

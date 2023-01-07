@@ -64,22 +64,6 @@ body {
   justify-content: center;
 }
 
-.pricing-list .row .colom {
-  padding: 0px;
-}
-
-.pricing-list .row .active {
-  z-index: 10;
-  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.263);
-  border-radius: 40px;
-  margin-top: -30px;
-  margin-bottom: -30px;
-  background: white;
-  /* background: url(../pics/ul.jpg);
-  background-position: 0 0;
-  background-size: cover; */
-}
-
 .pricing-list .row .price-card {
   text-align: left;
   color: white;
@@ -92,45 +76,30 @@ body {
   background-size: cover;
   border-radius: 20px;
   padding-bottom: 30px;
+  transition: 0.4s;
 }
 
-.pricing-list .row .colom:nth-child(1) .price-card {
-  border-radius: 0px 20px 20px 0px;
+.pricing-list .row .price-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.254);
 }
-
-.pricing-list .row .colom:nth-child(3) .price-card {
-  border-radius: 20px 0px 0px 20px;
-}
-
-.pricing-list .row .active .price-card {
-  height: 100%;
-  box-shadow: 0px 0px 0px 0px;
-}
-
-/* .pricing-list .row .price-card:hover {
-  transform: translateY(-10px);
-} */
 
 .pricing-list .row .price-card .card-head {
   position: relative;
   padding: 80px 20px 30px 20px;
   border-radius: 10px 10px 5px 5px;
-  background: var(--one-color);
+  background: linear-gradient(45deg, var(--eight-color), var(--one-color));
   text-align: center;
   transition: 0.4s;
   border-radius: 20px 20px 80% 80%;
 }
 
-.pricing-list .row .colom:nth-child(1) .price-card .card-head {
-  background: var(--six-color);
-  /* color: black; */
-  border-radius: 0px 20px 80% 80%;
+.pricing-list .row .colom:nth-child(2) .price-card .card-head {
+  background: linear-gradient(45deg, var(--six-color), var(--two-color));
 }
 
 .pricing-list .row .colom:nth-child(3) .price-card .card-head {
-  background: var(--eight-color);
-  /* color: black; */
-  border-radius: 20px 0px 80% 80%;
+  background: linear-gradient(45deg, #b0f, rgb(0, 4, 255));
 }
 
 .pricing-list .row .price-card .card-head .title {
@@ -142,7 +111,7 @@ body {
 .pricing-list .row .price-card .card-head img {
   width: 30px;
   height: 30px;
-  margin-right: 10px;
+  margin-left: 10px;
   filter: invert();
 }
 /* 
@@ -165,15 +134,21 @@ body {
   font-size: 23px;
   margin-bottom: 5px;
   font-family: arial;
-  color: var(--six-color);
+  background: -webkit-linear-gradient(var(--eight-color), var(--one-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .pricing-list .row .colom:nth-child(2) .price-card .card-desc h4 {
-  color: var(--one-color);
+  background: linear-gradient(45deg, var(--six-color), var(--two-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .pricing-list .row .colom:nth-child(3) .price-card .card-desc h4 {
-  color: var(--eight-color);
+  background: linear-gradient(45deg, #b0f, rgb(0, 4, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .pricing-list .row .price-card .card-desc p {
@@ -187,7 +162,7 @@ body {
   top: -50px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--six-color);
+  background: linear-gradient(45deg, var(--eight-color), var(--one-color));
   padding: 25px 10px;
   border-radius: 50%;
   text-align: center;
@@ -195,15 +170,11 @@ body {
 }
 
 .pricing-list .row .colom:nth-child(2) .price-card .sell {
-  /* background: linear-gradient(to top, var(--six-color), var(--two-color)); */
-  background: var(--one-color);
-  /* color: black; */
+  background: linear-gradient(45deg, var(--six-color), var(--two-color));
 }
 
 .pricing-list .row .colom:nth-child(3) .price-card .sell {
-  /* background: linear-gradient(to top, rgb(128, 0, 255), #00ffdb); */
-  background: var(--eight-color);
-  /* color: black; */
+  background: linear-gradient(45deg, #b0f, rgb(0, 4, 255));
 }
 
 .pricing-list .row .price-card .sell .price {
@@ -235,10 +206,6 @@ body {
   /* opacity: 0.6; */
 }
 
-.pricing-list .row .active .price-card ul {
-  padding-bottom: 90px;
-}
-
 .pricing-list .row .price-card ul li {
   display: flex;
   align-items: center;
@@ -248,7 +215,7 @@ body {
   padding: 7px 20px 7px 20px;
   z-index: 10;
   color: white;
-  /* color: black; */
+  direction: ltr;
 }
 
 .pricing-list .row .price-card ul li::before {
@@ -256,7 +223,7 @@ body {
   content: "";
   width: 100%;
   height: 100%;
-  background: var(--six-color);
+  background: linear-gradient(25deg, var(--eight-color), var(--one-color));
   border-radius: 30px;
   right: 0px;
   top: 0;
@@ -264,11 +231,11 @@ body {
 }
 
 .pricing-list .row .colom:nth-child(2) .price-card ul li::before {
-  background: var(--one-color);
+  background: linear-gradient(25deg, var(--six-color), var(--two-color));
 }
 
 .pricing-list .row .colom:nth-child(3) .price-card ul li::before {
-  background: var(--eight-color);
+  background: linear-gradient(25deg, #b0f, rgb(0, 4, 255));
 }
 
 .pricing-list .row .price-card ul li h5 {
@@ -278,7 +245,7 @@ body {
 
 .pricing-list .row .price-card ul li h5 i {
   font-size: 17px;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .pricing-list .row .price-card ul li span {
@@ -301,49 +268,22 @@ body {
   transition: 0.4s;
   font-size: 17px;
   z-index: 10;
-  background: var(--six-color);
-  border: 2px solid var(--six-color);
-  /* background: linear-gradient(45deg, var(--eight-color), var(--one-color)); */
+  background: linear-gradient(35deg, var(--eight-color), var(--one-color));
 }
 
 .pricing-list .row .colom:nth-child(2) .price-card .order a {
-  background: var(--one-color);
-  border-color: var(--one-color);
-}
-
-.pricing-list .row .colom:nth-child(3) .price-card .order a {
-  background: var(--eight-color);
-  border-color: var(--eight-color);
-}
-
-.pricing-list .row .price-card .order a:hover {
-  background: white;
-  color: var(--six-color);
-}
-
-.pricing-list .row .colom:nth-child(2) .price-card .order a:hover {
-  background: white;
-  color: var(--one-color);
-}
-
-.pricing-list .row .colom:nth-child(3) .price-card .order a:hover {
-  background: white;
-  color: var(--eight-color);
-}
-
-/* .pricing-list .row .colom:nth-child(2) .price-card .order a {
   background: linear-gradient(35deg, var(--six-color) 30%, var(--two-color));
 }
 
 .pricing-list .row .colom:nth-child(3) .price-card .order a {
-  background: linear-gradient(35deg, rgb(128, 0, 255), #00ffdb);
-} */
+  background: linear-gradient(35deg, #b0f, rgb(0, 4, 255));
+}
 
-/* .pricing-list .row .price-card .order a::before {
+.pricing-list .row .price-card .order a::before {
   position: absolute;
   content: "";
-  width: 100%;
-  background: rgb(48, 134, 255);
+  width: 0;
+  background: black;
   height: 100%;
   top: 0;
   left: 0;
@@ -351,19 +291,20 @@ body {
   opacity: 0;
   transition: 0.4s;
   z-index: -1;
-} */
+}
 
-.pricing-list .row .price-card .order a:hover:before {
+.pricing-list .row .price-card .order a:hover::before {
   opacity: 1;
+  width: 100%;
 }
 
 @media (max-width: 991px) {
-  .pricing-list .row .colom:nth-child(2) {
+  .pricing-list .row .colom:nth-child(1) {
     order: 4;
   }
 
   .pricing-list .row .colom:nth-child(3) {
-    order: 2;
+    order: 3;
   }
 
   .pricing-list .row .colom:not(:first-child) {

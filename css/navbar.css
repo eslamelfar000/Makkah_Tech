@@ -201,7 +201,7 @@ body {
   color: orange;
 }
 
-.nav-bar .nav-content .nav-contact ul li:first-child {
+.nav-bar .nav-content .nav-contact ul li:not(:last-child) {
   margin-left: 10px;
 }
 
@@ -209,8 +209,8 @@ body {
   text-decoration: none;
   color: white;
   font-size: 13px;
-  padding: 8px 15px;
-  border-radius: 3px;
+  padding: 8px 12px;
+  border-radius: 5px;
   background: rgb(0, 110, 255);
   display: flex;
   align-items: center;
@@ -218,9 +218,8 @@ body {
 }
 
 .nav-bar .nav-content .nav-contact ul li .contact-link i {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 500;
-  margin-right: 10px;
 }
 
 .nav-bar .nav-content .nav-contact ul li .contact-link:hover {
@@ -595,12 +594,15 @@ body {
 }
 
 @media (max-width: 767px) {
-  .nav-bar .nav-content .nav-contact {
-    display: none;
+  .nav-bar .nav-content .nav-contact ul li .contact-link i {
+    font-size: 18px;
   }
 }
 
 @media (max-width: 575px) {
+  .nav-bar .nav-content .nav-contact {
+    display: none;
+  }
   .nav-bar .nav-content {
     padding: 8px 20px;
   }
