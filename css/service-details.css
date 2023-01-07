@@ -1,0 +1,162 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --one-color: rgb(0, 110, 255);
+  --two-color: orange;
+  --three-color: rgb(218, 233, 255);
+  --four-color: rgb(255, 242, 219);
+  --five-color: #fbe6e6;
+  --six-color: #e95557;
+  --seven-color: rgb(27, 27, 27);
+  --eight-color: green;
+}
+
+.service-details {
+  padding: 100px 0px;
+  width: 100%;
+  position: relative;
+  direction: rtl !important;
+}
+
+.service-details .float-box {
+  position: absolute;
+  top: -70px;
+  left: 100px;
+  z-index: 10;
+  text-align: center;
+}
+
+.service-details .float-box .icon {
+  margin-bottom: 5px;
+  font-size: 45px;
+}
+
+.service-details .float-box .call a {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+  text-align: center;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700 !important;
+}
+
+.service-details .float-box .call a:hover {
+  color: var(--two-color);
+}
+
+.service-details .float-box .call a h4 {
+  font-size: 17px;
+  font-size: 900;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700 !important;
+}
+
+.service-details .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+  border-bottom: 2px dashed gainsboro;
+  padding-bottom: 70px;
+}
+
+.service-details .row .col-img {
+  text-align: center;
+}
+
+.service-details .row .col-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.service-details .row .diff-img img {
+  margin-bottom: 20px;
+}
+
+.service-details .row .col-video iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.service-details .row .details {
+  padding: 20px;
+}
+
+.service-details .row .details .title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.service-details .row .details .title img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.service-details .row .details .title-desc {
+  font-size: 17px;
+  opacity: 0.7;
+  line-height: 0.8cm;
+  /* display: flex; */
+  /* padding-right: 30px; */
+}
+
+.service-details .row .details .title-desc a {
+  text-decoration: none;
+  color: var(--six-color);
+  transition: 0.4s;
+  font-size: 19px;
+}
+
+.service-details .row .details .title-desc a:hover {
+  color: var(--one-color);
+}
+
+.service-details .row .details .title-desc img {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.service-details .row .details .desc-list {
+  list-style: none;
+  padding-right: 30px;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.service-details .row .details .desc-list li {
+  margin-bottom: 20px;
+  font-size: 15px;
+  display: flex;
+  /* align-items: center; */
+}
+
+.service-details .diff .details .desc-list li {
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+.service-details .row .details .desc-list li i {
+  font-size: 22px;
+  margin-left: 10px;
+  color: var(--six-color);
+}
+
+@media (max-width: 1199px) {
+  .service-details .row .details .title-desc {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .service-details .row .col-img .display {
+    display: none;
+  }
+}
