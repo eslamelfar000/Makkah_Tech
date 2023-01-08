@@ -287,18 +287,19 @@ body {
   margin-bottom: 50px;
 }
 
-.project-details .about-project .article .article-title,
-.project-details .about-project .article .features-title {
+.project-details .about-project .article .title {
   font-size: 21px;
   font-weight: 700;
   margin-bottom: 20px;
+  color: var(--one-color);
 }
 
-.project-details .about-project .article .article-title img,
-.project-details .about-project .article .features-title img {
-  width: 30px;
-  height: 30px;
+.project-details .about-project .article .title img {
+  width: 35px;
+  height: 35px;
   margin-left: 10px;
+  filter: invert(43%) sepia(93%) saturate(2515%) hue-rotate(200deg)
+    brightness(103%) contrast(102%);
 }
 
 .project-details .about-project .article .article-body {
@@ -307,11 +308,31 @@ body {
   line-height: 0.8cm;
 }
 
+.project-details .article .article-features .sub-title {
+  margin-bottom: 60px;
+}
+
+.project-details .article .article-features .sub-title .feature-sub {
+  font-size: 20px;
+  font-weight: 700;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  color: var(--six-color);
+}
+
+.project-details .article .article-features .sub-title .feature-sub img {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+  filter: invert(54%) sepia(79%) saturate(4950%) hue-rotate(331deg)
+    brightness(104%) contrast(82%);
+}
+
 .project-details .about-project .article .project-features {
   list-style: none;
   padding-left: 0px;
   margin-bottom: 0px;
-  padding-right: 20px;
+  padding-right: 40px;
 }
 
 .project-details .about-project .article .project-features li {
@@ -321,7 +342,7 @@ body {
 
 .project-details .about-project .article .project-features li i {
   font-size: 18px;
-  color: var(--one-color);
+  color: var(--two-color);
   margin-left: 10px;
   padding: 5px;
   transition: 0.4s;
@@ -331,10 +352,11 @@ body {
   font-size: 14px;
   margin-bottom: 0px;
   line-height: 0.7cm;
+  opacity: 0.7;
 }
 
 .project-details .about-project .article .project-features li:hover > i {
-  color: var(--two-color);
+  color: var(--one-color);
 }
 
 @media (max-width: 991px) {
@@ -384,6 +406,10 @@ body {
 
   .project-details .project-title h2::before {
     width: 100%;
+  }
+
+  .project-details .about-project .article .project-features {
+    padding-right: 20px;
   }
 }
 

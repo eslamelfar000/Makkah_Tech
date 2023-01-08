@@ -62,19 +62,61 @@ body {
   }
 }
 
-.description .row .desc-info {
-  padding-left: 20px;
-  width: 100%;
+.description .row .details {
+  padding: 20px;
 }
 
-.description .row .desc-info h4 {
-  font-size: 22px;
-  font-weight: 700;
+.description .row .details .title {
+  font-size: 27px;
   margin-bottom: 20px;
+  display: flex;
+  font-weight: 700;
 }
 
-.description .row .desc-info p {
-  font-size: 16px;
+.description .row .details .title img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  filter: invert(64%) sepia(51%) saturate(3012%) hue-rotate(2deg)
+    brightness(108%) contrast(105%);
+}
+
+.description .row .details .title-desc {
+  font-size: 17px;
   opacity: 0.8;
   line-height: 0.8cm;
+  /* display: flex; */
+  /* padding-right: 30px; */
+}
+
+.description .row .details .title-desc img {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.description .row .details .desc-list {
+  list-style: none;
+  padding-right: 30px;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.description .row .details .desc-list li {
+  margin-bottom: 20px;
+  font-size: 15px;
+  display: flex;
+  /* align-items: center; */
+}
+
+.description .diff .details .desc-list li {
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+.description .row .details .desc-list li i {
+  font-size: 22px;
+  margin-left: 10px;
+  color: var(--two-color);
 }
