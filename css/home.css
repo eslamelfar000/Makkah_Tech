@@ -96,6 +96,22 @@ body {
   background: rgb(0, 110, 255);
 }
 
+.swiper-slide:nth-child(2) .slide-content .slide-link {
+  background: var(--six-color);
+}
+
+.swiper-slide:nth-child(2) .slide-content .slide-link:hover {
+  background: var(--one-color);
+}
+
+.swiper-slide:nth-child(3) .slide-content .slide-link {
+  background: var(--one-color);
+}
+
+.swiper-slide:nth-child(3) .slide-content .slide-link:hover {
+  background: var(--six-color);
+}
+
 .header-slider .header-content .mySwiper-head .swiper-slide::before {
   position: absolute;
   content: "";
