@@ -32,13 +32,14 @@ body {
   width: 100%;
   position: relative;
   z-index: 1000;
-  transition: 0.3s;
+  transition: 0.4s;
   position: fixed;
   background: white;
   direction: rtl !important;
 }
 
 .nav-change {
+  /* position: fixed; */
   top: 0;
   left: 0;
   margin-top: 0px;
