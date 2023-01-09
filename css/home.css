@@ -1251,7 +1251,6 @@ body {
   border-color: var(--six-color);
   background: white;
   opacity: 1;
-  color: var(--six-color);
 }
 
 .contact .map .contact-details .contact-form .input-info input:focus + span,
